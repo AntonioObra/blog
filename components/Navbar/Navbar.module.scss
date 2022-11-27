@@ -1,0 +1,32 @@
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0rem auto;
+  h3 {
+    font-size: 24px;
+    color: #3d3d3f;
+  }
+  :hover {
+    color: black;
+    cursor: pointer;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 40%;
+
+    li {
+      color: #3d3d3f;
+      font-size: 20px;
+    }
+    :hover {
+      color: black;
+      cursor: pointer;
+    }
+  }
+}

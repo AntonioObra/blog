@@ -1,0 +1,52 @@
+.Header {
+  // background-image: url("../../public/images/header-background.svg");
+  height: 80vh;
+}
+
+.Carousel {
+  width: 60%;
+  height: 20rem;
+  margin: 2rem auto;
+  img {
+    object-fit: cover;
+    height: 20rem;
+    width: 100%;
+  }
+}
+
+.Container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.LeftHeader {
+  width: 20%;
+  position: relative;
+  top: -200px;
+  // background-color: green;
+}
+
+.CenterHeader {
+  width: 60%;
+  // background-color: blue;
+  color: black;
+
+  h1 {
+    font-size: 84px;
+    text-align: center;
+  }
+  h5 {
+    font-size: 24px;
+    text-align: center;
+
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+.RightHeader {
+  width: 20%;
+  position: relative;
+  top: 100px;
+  // background-color: green;
+}

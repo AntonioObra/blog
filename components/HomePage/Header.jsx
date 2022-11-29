@@ -27,6 +27,9 @@ const Header = () => {
           <img src="images/blob2.svg" alt="" />
         </div>
       </div>
+      <img src="images/blob5.svg" alt="" className={styles.LeftHeaderImg2} />
+
+      <img src="images/wave.svg" alt="" className={styles.wave} />
     </div>
   );
 };

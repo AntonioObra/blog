@@ -1,0 +1,52 @@
+.AboutHome {
+  // position: relative;
+  // top: 300px;
+  background-color: black;
+  // height: 110vh;
+}
+
+.Container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 70%;
+  margin: 0rem auto;
+  padding: 5rem 0;
+
+  img {
+    width: 25%;
+  }
+}
+
+.LeftSide {
+  width: 50%;
+  //   background-color: red;
+  color: white;
+
+  h2 {
+    font-size: 48px;
+    letter-spacing: 2px;
+  }
+  p {
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+}
+
+.blobs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem;
+  position: relative;
+  top: -50px;
+
+  img {
+    width: 10%;
+  }
+
+  .img2 {
+    position: relative;
+    top: -200px;
+  }
+}

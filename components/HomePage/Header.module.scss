@@ -1,6 +1,7 @@
 .Header {
   // background-image: url("../../public/images/header-background.svg");
-  height: 80vh;
+  max-height: 100vh;
+  // padding-bottom: 300px;
 }
 
 .Carousel {
@@ -24,12 +25,19 @@
   position: relative;
   top: -200px;
   // background-color: green;
+  // height: ;
 }
 
 .CenterHeader {
   width: 60%;
   // background-color: blue;
   color: black;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  justify-content: flex-start;
+  // position: absolute;
 
   h1 {
     font-size: 84px;
@@ -49,4 +57,18 @@
   position: relative;
   top: 100px;
   // background-color: green;
+}
+
+.LeftHeaderImg2 {
+  position: relative;
+  top: -200px;
+  width: 10%;
+  margin: 0rem 15rem;
+  height: 400px;
+  padding: 0;
+}
+
+.wave {
+  position: relative;
+  top: -350px;
 }

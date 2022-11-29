@@ -7,8 +7,9 @@ import {
   Header,
   Navbar,
 } from "../components";
+import { getPosts } from "../services";
 
-export default function Home() {
+export default function Home({ posts }) {
   return (
     <div>
       <Head>
@@ -19,8 +20,18 @@ export default function Home() {
 
       <Header />
       <AboutHome />
-      <FeaturedPosts />
+      <FeaturedPosts posts={posts} />
       <Footer />
     </div>
   );
 }
+
+export const getStaticProps = async () => {
+  const posts = await getPosts();
+
+  return {
+    props: {
+      posts,
+    },
+  };
+};

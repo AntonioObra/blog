@@ -1,0 +1,81 @@
+.PostCard {
+  width: 800px;
+  //   height: 320px;
+  display: flex;
+  align-items: top;
+  justify-content: top;
+  //   background-color: #fff222;
+  border-radius: 4px;
+  //   margin: 2rem;
+  color: white;
+  padding: 2rem 0;
+  border-bottom: 2px solid white;
+  transition: all 0.5s ease;
+  &:hover {
+    border-bottom: 2px solid orangered;
+  }
+}
+
+.PostCardImg {
+  width: 320px;
+  height: 240px;
+  //   margin: 1rem;
+  display: flex;
+  align-items: top;
+  justify-content: top;
+
+  img {
+    width: 320px;
+    height: 240px;
+    object-fit: cover;
+  }
+}
+
+.PostCardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  justify-content: top;
+  //   background-color: red;
+  max-height: 240px;
+  margin: 0 2rem;
+
+  .PostInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    justify-content: top;
+    // background-color: green;
+
+    h3 {
+      font-size: 32px;
+      text-transform: lowercase;
+      margin: 1rem 0;
+      padding: 0;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+        text-decoration-color: orangered;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      text-transform: lowercase;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.PostCardExcerpt {
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  justify-content: top;
+  //   background-color: red;
+  p {
+    font-size: 20px;
+    text-transform: lowercase;
+  }
+}

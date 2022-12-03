@@ -3,7 +3,7 @@ import styles from "./EditorPicks.module.scss";
 const EditorPicks = () => {
   return (
     <div className={styles.EditorPicks}>
-      <h2>Editor's Pick</h2>
+      <h2>Editor&#39;s Pick</h2>
     </div>
   );
 };

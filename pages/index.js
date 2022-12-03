@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import {
   AboutHome,
+  EditorPicks,
   FeaturedPosts,
   Footer,
   Header,
@@ -19,8 +20,10 @@ export default function Home({ posts }) {
       </Head>
 
       <Header />
-      <AboutHome />
+
       <FeaturedPosts posts={posts} />
+      <AboutHome />
+      <EditorPicks />
       <Footer />
     </div>
   );

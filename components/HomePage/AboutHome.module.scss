@@ -1,8 +1,19 @@
 .AboutHome {
-  // position: relative;
-  // top: 300px;
-  background-color: black;
-  // height: 110vh;
+  height: 80vh;
+  background: url("../../public/images/IMG_1435.JPG"), #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  h2 {
+    color: white;
+    font-size: 48px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
 }
 
 .Container {
@@ -20,13 +31,8 @@
 
 .LeftSide {
   width: 50%;
-  //   background-color: red;
   color: white;
 
-  h2 {
-    font-size: 48px;
-    letter-spacing: 2px;
-  }
   p {
     font-size: 24px;
     letter-spacing: 2px;

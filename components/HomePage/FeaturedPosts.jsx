@@ -4,7 +4,11 @@ import PostCard from "../PostCard/PostCard";
 const FeaturedPosts = ({ posts }) => {
   return (
     <div className={styles.FeaturedPosts}>
-      <h2>featured posts</h2>
+      <div className={styles.header}>
+        <div className={styles.LeftSide}>
+          <h2>Popular topics</h2>
+        </div>
+      </div>
 
       <div className={styles.container}>
         {posts.map((post, index) => (

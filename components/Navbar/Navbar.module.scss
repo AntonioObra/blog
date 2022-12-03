@@ -1,15 +1,17 @@
 .Navbar {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 60%;
+  justify-content: space-between;
+  width: 100%;
   margin: 0rem auto;
+  padding: 0 5rem;
+  background-color: rgba(0, 0, 0, 0.308);
   h3 {
     font-size: 24px;
-    color: #3d3d3f;
+    color: white;
   }
   :hover {
-    color: black;
+    color: white;
     cursor: pointer;
   }
 
@@ -18,14 +20,14 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    width: 40%;
+    width: 20%;
 
     li {
-      color: #3d3d3f;
+      color: white;
       font-size: 20px;
     }
     :hover {
-      color: black;
+      color: white;
       cursor: pointer;
     }
   }

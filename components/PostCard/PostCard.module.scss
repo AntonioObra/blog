@@ -1,5 +1,5 @@
 .PostCard {
-  width: 400px;
+  width: 350px;
   //   height: 320px;
   display: flex;
   align-items: top;
@@ -15,7 +15,7 @@
 }
 
 .PostCardImg {
-  width: 400px;
+  width: 320px;
   width: 100%;
   height: 320px;
   // height: 100%;
@@ -37,7 +37,7 @@
   }
 
   img {
-    width: 400px;
+    width: 350px;
     height: 100%;
     object-fit: cover;
     border-radius: 15px;

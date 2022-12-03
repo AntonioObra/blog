@@ -1,9 +1,17 @@
 .Header {
-  background-image: url("../../public/images/IMG_1551.JPG");
+  // background-image: url("../../public/images/IMG_1551.JPG");
+  background-image: url("../../public/images/bg1.svg");
   height: 70vh;
-  background-size: cover;
-  background-position: top;
+  // background-size: cover;
+  // background-position: top;
   // p  adding-bottom: 300px;
+
+  img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: -200px;
+  }
 }
 
 .CenterHeader {
@@ -17,7 +25,7 @@
   justify-content: center;
 
   h1 {
-    font-size: 54px;
+    font-size: 84px;
     text-align: center;
   }
   h5 {

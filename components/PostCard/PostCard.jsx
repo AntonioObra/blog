@@ -8,7 +8,7 @@ const PostCard = ({ post }) => {
     <div className={styles.PostCard}>
       <div className={styles.PostCardImg}>
         <img src={post.featuredImage.url} alt="" />
-        <p>{post.categories[0].name}</p>
+        <p>{post?.categories[0]?.name}</p>
       </div>
 
       <div className={styles.PostCardContent}>

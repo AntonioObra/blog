@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { PostDetails } from "../../components";
+import { Footer, PostDetails } from "../../components";
 import { getPosts, getPostDetails } from "../../services";
 
 const PostDetail = ({ post }) => {
@@ -7,6 +7,7 @@ const PostDetail = ({ post }) => {
   return (
     <>
       <PostDetails post={post} />
+      <Footer />
     </>
   );
 };

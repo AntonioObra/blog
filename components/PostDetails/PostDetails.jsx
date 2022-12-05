@@ -1,6 +1,10 @@
 import React from "react";
 import PostHeader from "./PostHeader";
 import styles from "./PostDetails.module.scss";
+import SimilarPosts from "./SimilarPosts";
+import AboutHome from "../HomePage/AboutHome";
+import { PrismLight } from "react-syntax-highlighter";
+import atomDark from "react-syntax-highlighter/dist/cjs/styles/prism/atom-dark";
 
 const PostDetails = ({ post }) => {
   const getContentFragment = (index, text, obj, type) => {
@@ -55,6 +59,15 @@ const PostDetails = ({ post }) => {
             src={obj.src}
           />
         );
+      case "code-block":
+        return (
+          <PrismLight
+            key={index}
+            style={atomDark}
+            language="javascript"
+            children={modifiedText}
+          />
+        );
       default:
         return modifiedText;
     }
@@ -81,6 +94,11 @@ const PostDetails = ({ post }) => {
           </div>
         </div>
       </div>
+      <AboutHome />
+      <SimilarPosts
+        slug={post.slug}
+        categories={post.categories.map((category) => category.slug)}
+      />
     </div>
   );
 };

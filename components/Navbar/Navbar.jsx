@@ -1,13 +1,26 @@
 import styles from "./Navbar.module.scss";
+import Link from "next/link";
+
 const Navbar = () => {
   return (
     <div className={styles.Navbar}>
-      <h3>home</h3>
+      <Link href="/">
+        <h3>home</h3>
+      </Link>
+
       <ul>
-        <li>blog</li>
-        <li>bookshelf</li>
-        <li>about</li>
-        <li>contact</li>
+        <Link href="/posts">
+          <li>blog</li>{" "}
+        </Link>
+        <Link href="/bookshelf">
+          <li>bookshelf</li>
+        </Link>
+        <Link href="/about">
+          <li>about</li>
+        </Link>
+        <Link href="/contact">
+          <li>contact</li>
+        </Link>
       </ul>
     </div>
   );

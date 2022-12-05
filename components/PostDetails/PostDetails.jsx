@@ -69,6 +69,10 @@ const PostDetails = ({ post }) => {
         return modifiedText;
     }
   };
+
+  if (!post) {
+    return <>resi</>;
+  }
   return (
     <div>
       <PostHeader

@@ -3,7 +3,6 @@ import moment from "moment";
 import Link from "next/link";
 
 const PostCard = ({ post }) => {
-  console.log(post);
   return (
     <div className={styles.PostCard}>
       <div className={styles.PostCardImg}>

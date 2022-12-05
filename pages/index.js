@@ -8,9 +8,9 @@ import {
   Header,
   Navbar,
 } from "../components";
-import { getPosts } from "../services";
+import { getFeaturedPosts, getPosts } from "../services";
 
-export default function Home({ posts }) {
+export default function Home({ posts, featuredPosts }) {
   return (
     <div>
       <Head>
@@ -23,7 +23,7 @@ export default function Home({ posts }) {
 
       <FeaturedPosts posts={posts} />
       <AboutHome />
-      <EditorPicks />
+      <EditorPicks posts={featuredPosts} />
       <Footer />
     </div>
   );
@@ -31,10 +31,12 @@ export default function Home({ posts }) {
 
 export const getStaticProps = async () => {
   const posts = await getPosts();
+  const featuredPosts = await getFeaturedPosts();
 
   return {
     props: {
       posts,
+      featuredPosts,
     },
   };
 };

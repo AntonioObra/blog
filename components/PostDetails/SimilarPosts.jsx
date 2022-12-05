@@ -3,7 +3,7 @@ import Image from "next/image";
 import moment from "moment";
 import Link from "next/link";
 import { getSimilarPosts, getRecentPosts } from "../../services";
-import PostCard from "../PostCard/PostCard";
+import PostCardV2 from "../PostCard/PostCardV2";
 import styles from "./SimilarPosts.module.scss";
 
 const SimilarPosts = ({ slug, categories }) => {
@@ -26,7 +26,7 @@ const SimilarPosts = ({ slug, categories }) => {
       <h2>Related Posts</h2>
       <div className={styles.SimilarPosts}>
         {relatedPosts.map((post, index) => (
-          <PostCard post={post} key={index} />
+          <PostCardV2 post={post} key={index} />
         ))}
       </div>
     </div>

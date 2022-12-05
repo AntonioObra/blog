@@ -204,6 +204,11 @@ export const getFeaturedPosts = async () => {
         title
         slug
         createdAt
+        categories {
+          name
+          slug
+        }
+        excerpt
       }
     }   
   `;

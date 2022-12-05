@@ -2,6 +2,7 @@ import styles from "./FeaturedPosts.module.scss";
 import PostCard from "../PostCard/PostCard";
 
 const FeaturedPosts = ({ posts }) => {
+  const newPosts = posts.slice(0, 8);
   return (
     <div className={styles.FeaturedPosts}>
       <div className={styles.header}>
@@ -11,7 +12,7 @@ const FeaturedPosts = ({ posts }) => {
       </div>
 
       <div className={styles.container}>
-        {posts.map((post, index) => (
+        {newPosts.map((post, index) => (
           <PostCard key={index} post={post.node} />
         ))}
       </div>

@@ -10,6 +10,8 @@ const PostDetails = ({ post }) => {
   const getContentFragment = (index, text, obj, type) => {
     let modifiedText = text;
 
+    console.log(obj);
+
     if (obj) {
       if (obj.bold) {
         modifiedText = <b key={index}>{text}</b>;
@@ -25,6 +27,14 @@ const PostDetails = ({ post }) => {
     }
 
     switch (type) {
+      case "heading-two":
+        return (
+          <h2 key={index} className="text-xl font-semibold mb-4">
+            {modifiedText.map((item, i) => (
+              <React.Fragment key={i}>{item}</React.Fragment>
+            ))}
+          </h2>
+        );
       case "heading-three":
         return (
           <h3 key={index} className="text-xl font-semibold mb-4">
@@ -59,6 +69,18 @@ const PostDetails = ({ post }) => {
             src={obj.src}
           />
         );
+
+      case "iframe":
+        return (
+          <iframe
+            key={index}
+            alt={obj.title}
+            height={obj.height}
+            width={obj.width}
+            src={obj.url}
+          />
+        );
+
       case "code-block":
         return (
           <PrismLight key={index} style={atomDark} language="javascript">

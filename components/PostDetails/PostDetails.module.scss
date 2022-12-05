@@ -1,0 +1,39 @@
+.Post {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 5rem auto;
+}
+
+.PostPost {
+  width: 80%;
+  margin: 0 auto;
+  img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+}
+
+.PostText {
+  width: 80%;
+  margin: 0 auto;
+
+  h3 {
+    font-size: 32px;
+  }
+  b,
+  p {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-size: 28px;
+  }
+
+  em {
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}

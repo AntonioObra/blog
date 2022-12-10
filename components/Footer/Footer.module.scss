@@ -6,12 +6,24 @@
 }
 
 .container {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   padding: 5rem 0;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  //   background-color: red;
+  // background-color: red;
+}
+
+.right {
+  // background-color: red;
+  // width: 50%;
+
+  img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin-left: 2rem;
+  }
 }

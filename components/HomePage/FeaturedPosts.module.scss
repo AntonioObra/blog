@@ -5,6 +5,10 @@
   color: black;
   width: 80%;
   margin: 0rem auto;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .header {

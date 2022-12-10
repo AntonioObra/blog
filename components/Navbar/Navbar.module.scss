@@ -6,6 +6,11 @@
   margin: 0rem auto;
   // padding: 0 5rem;
   // background-color: rgba(0, 0, 0, 0.5);
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
   h3 {
     font-size: 24px;
     color: white;

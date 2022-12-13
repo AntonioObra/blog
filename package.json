@@ -9,21 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "graphql": "^16.6.0",
-    "graphql-request": "^5.0.0",
-    "html-react-parser": "^3.0.4",
-    "moment": "^2.29.4",
-    "next": "13.0.5",
+    "next": "13.0.6",
     "react": "18.2.0",
-    "react-code-blocks": "^0.0.9-0",
-    "react-dom": "18.2.0",
-    "react-multi-carousel": "^2.8.2",
-    "react-syntax-highlighter": "^15.5.0",
-    "sass": "^1.56.1",
-    "typewriter-effect": "^2.19.0"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "eslint": "8.28.0",
-    "eslint-config-next": "13.0.5"
+    "autoprefixer": "^10.4.13",
+    "eslint": "8.29.0",
+    "eslint-config-next": "13.0.6",
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.2.4"
   }
 }

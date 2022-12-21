@@ -7,3 +7,7 @@
 .header-bg {
   background-image: url("/images/bg5.svg");
 }
+
+::selection {
+  @apply bg-sky-200 text-black;
+}

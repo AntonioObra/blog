@@ -31,6 +31,7 @@ export default function Home() {
           <div className="flex items-start space-x-6">
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://twitter.com/antonioobra8"
               className="text-black bg-sky-200 py-5 px-7 font-bold border-2 border-sky-200 text-center hover:bg-[#0f0f0f] hover:text-sky-200 duration-150 "
             >
@@ -38,6 +39,7 @@ export default function Home() {
             </a>
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://github.com/AntonioObra"
               className="text-white bg-sky-700 py-5 px-7 font-bold border-2 border-sky-700 text-center hover:bg-[#0f0f0f] hover:text-sky-700 duration-150 "
             >

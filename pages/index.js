@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 import PostCard from "../components/PostCard";
+import Typewriter from "typewriter-effect";
 
 import { getFeaturedPosts, getPosts } from "../services";
 import LatestPosts from "../components/LatestPosts";
@@ -21,7 +22,15 @@ export default function Home({ posts, featuredPosts }) {
       <header className="container  pt-20 mx-auto flex flex-col space-y-12 justify-evenly items-top lg:flex-row md:space-y-0 ">
         <div className="w-2/3 mx-auto lg:w-1/2 lg:mx-0">
           <h1 className="text-6xl md:text-8xl xl:text-9xl font-semibold text-left z-20 text-white ">
-            blog.<br></br> obradovic
+            blog. <br></br> obradovic
+            {/* <Typewriter
+              options={{
+                strings: ["obradovic", "dev", "photos", "reading"],
+                autoStart: true,
+                loop: true,
+              }}
+              style={{ color: "white" }}
+            /> */}
           </h1>
           <div className="border-b-2 border-sky-200 my-5"></div>
           <p className="text-xl text-white">
@@ -61,14 +70,27 @@ export default function Home({ posts, featuredPosts }) {
 
       {/* Intersection */}
 
-      <div className=" container mx-auto mt-32 px-20">
-        <div className="border-b-2 border-sky-200 my-5"></div>
-        <h2 className="text-5xl md:text-7xl xl:text-8xl font-semibold   outline-title">
-          you could leave life right now, let that determine what you do and
-          think
+      <div className=" container mx-auto mt-32 px-20 ">
+        <div className="border-b-2 border-sky-200 my-10"></div>
+        <h2 className="text-5xl text-left md:text-7xl xl:text-8xl font-bold   outline-title">
+          <Typewriter
+            options={{
+              strings: [
+                "you could be good today, but instead you choose tomorrow",
+                "the person who does wrong, does wrong to themselves",
+                "better to trip with the feet than with the tounge",
+                "to stop talking about what the good man is like, and just be one",
+              ],
+              autoStart: true,
+              loop: true,
+            }}
+            style={{ color: "white" }}
+          />
         </h2>
-        <div className="border-b-2 border-sky-200 my-5"></div>
+        <div className="border-b-2 border-sky-200 my-10"></div>
       </div>
+
+      {/* Editor Picks */}
     </div>
   );
 }

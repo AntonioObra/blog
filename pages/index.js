@@ -7,6 +7,8 @@ import EditorsPicks from "../components/EditorsPicks";
 
 import { getFeaturedPosts, getPosts } from "../services";
 import LatestPosts from "../components/LatestPosts";
+import PhotosCTA from "../components/PhotosCTA";
+import Footer from "../components/Footer";
 
 export default function Home({ posts, featuredPosts }) {
   return (
@@ -93,6 +95,10 @@ export default function Home({ posts, featuredPosts }) {
 
       {/* Editor Picks */}
       <EditorsPicks posts={featuredPosts} />
+
+      {/* Photos CTA */}
+      <PhotosCTA />
+      <Footer />
     </div>
   );
 }

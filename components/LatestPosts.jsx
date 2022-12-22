@@ -8,7 +8,7 @@ const LatestPosts = ({ posts }) => {
       <h2 className="text-5xl md:text-7xl xl:text-8xl font-semibold text-right  text-white  ">
         recent<br></br> posts
       </h2>
-
+      {/* fix */}
       <div className="border-b-2 border-sky-200 my-16 "></div>
 
       <div className="  lg:max-w-8xl  flex flex-col items-top justify-between space-y-5 md:space-y-0  md:flex-row flex-wrap ">

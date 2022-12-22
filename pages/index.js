@@ -4,11 +4,9 @@ import Navbar from "../components/Navbar";
 import PostCard from "../components/PostCard";
 
 import { getFeaturedPosts, getPosts } from "../services";
+import LatestPosts from "../components/LatestPosts";
 
 export default function Home({ posts, featuredPosts }) {
-  console.log(posts);
-  const newPosts = posts.slice(0, 6);
-
   return (
     <div className="h-screen   ">
       <Head>
@@ -59,28 +57,17 @@ export default function Home({ posts, featuredPosts }) {
       </header>
 
       {/* Latest Posts */}
-
-      <div className="container mx-auto mt-32 px-20">
-        <h2 className="text-5xl md:text-7xl xl:text-8xl font-semibold text-right  text-white  ">
-          recent<br></br> posts
-        </h2>
-
-        <div className="border-b-2 border-sky-200 my-16 "></div>
-
-        <div className="  lg:max-w-8xl  flex flex-col items-top justify-between space-y-5 md:space-y-0  md:flex-row flex-wrap ">
-          {newPosts.map((post, index) => (
-            <PostCard key={index} post={post.node} />
-          ))}
-        </div>
-      </div>
+      <LatestPosts posts={posts} />
 
       {/* Intersection */}
 
-      <div className="bg-sky-200 mt-32 h-96 flex items-center">
-        <h2 className="text-5xl md:text-7xl xl:text-8xl font-semibold text-center  ">
+      <div className=" container mx-auto mt-32 px-20">
+        <div className="border-b-2 border-sky-200 my-5"></div>
+        <h2 className="text-5xl md:text-7xl xl:text-8xl font-semibold   outline-title">
           you could leave life right now, let that determine what you do and
           think
         </h2>
+        <div className="border-b-2 border-sky-200 my-5"></div>
       </div>
     </div>
   );

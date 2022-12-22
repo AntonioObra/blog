@@ -21,3 +21,10 @@ body {
 //   filter: invert(53%) sepia(38%) saturate(3303%) hue-rotate(326deg)
 //     brightness(101%) contrast(96%);
 // }
+.outline-title {
+  color: #000000;
+  -webkit-text-stroke: 2px #bae7fd;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}

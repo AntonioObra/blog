@@ -3,6 +3,7 @@ import Image from "next/image";
 import Navbar from "../components/Navbar";
 import PostCard from "../components/PostCard";
 import Typewriter from "typewriter-effect";
+import EditorsPicks from "../components/EditorsPicks";
 
 import { getFeaturedPosts, getPosts } from "../services";
 import LatestPosts from "../components/LatestPosts";
@@ -91,6 +92,7 @@ export default function Home({ posts, featuredPosts }) {
       </div>
 
       {/* Editor Picks */}
+      <EditorsPicks posts={featuredPosts} />
     </div>
   );
 }

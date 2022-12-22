@@ -4,10 +4,20 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
 
-.header-bg {
-  background-image: url("/images/bg5.svg");
+body {
+  @apply bg-[#0f0f0f];
 }
 
 ::selection {
   @apply bg-sky-200 text-black;
 }
+
+// .postCardIcon {
+//   filter: invert(53%) sepia(38%) saturate(330%) hue-rotate(326deg)
+//     brightness(101%) contrast(96%);
+// }
+
+// .postCardIcon:hover {
+//   filter: invert(53%) sepia(38%) saturate(3303%) hue-rotate(326deg)
+//     brightness(101%) contrast(96%);
+// }

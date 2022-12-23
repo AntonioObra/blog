@@ -8,7 +8,7 @@ export default function Contact() {
       <section className="container  pt-20 mx-auto flex flex-col space-y-12 justify-evenly items-top lg:flex-row md:space-y-0 lg:mb-32 px-20">
         <div className=" mx-auto lg:mx-0 w-full">
           <h1 className="text-6xl md:text-8xl xl:text-9xl font-semibold  z-20 text-white md:h-46">
-            let's <br></br>get in touch
+            let&#39;s <br></br>get in touch
             {/* <Typewriter
               options={{
                 strings: ["web <br> developer", "book <br> worm"],

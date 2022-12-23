@@ -30,8 +30,8 @@ export default function About() {
           <p className="text-xl text-white text-right ">
             my web dev journey started in 2020 when I was reintroduced to the
             wonders of html and css and have gotten hooked immediately, since
-            than i've gotten familiar with tons of new technologies like git and
-            github, javascript and typescript, react and nextjs, nodejs and
+            than i&#39;ve gotten familiar with tons of new technologies like git
+            and github, javascript and typescript, react and nextjs, nodejs and
             express, mongo and firebase...<br></br> and went to land my first
             job 6 months after graduationg from highschool
           </p>
@@ -57,11 +57,11 @@ export default function About() {
           </h1>
           <div className="border-b-2 border-sky-200 my-5"></div>
           <p className="text-xl text-white text-left ">
-            ever since getting reccomended the books 'rich dad, poor dad' and
-            'think and grow rich', i've gotten big into reading and expending my
-            knowledge. being in the position where you can read about the
-            struggles of a roman emperor to getting sucked into the world of
-            witcher is something else
+            ever since getting reccomended the books &#39;rich dad, poor
+            dad&#39; and &#39;think and grow rich&#39;, i&#39;ve gotten big into
+            reading and expending my knowledge. being in the position where you
+            can read about the struggles of a roman emperor to getting sucked
+            into the world of witcher is something else
           </p>
           <div className="border-b-2 border-sky-200 my-5 mb-7"></div>
           <div className="flex items-start space-x-6">

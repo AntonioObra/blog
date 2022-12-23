@@ -2,10 +2,10 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="hidden container   py-6 text-white md:flex items-start justify-start space-x-6 px-24 mx-14">
+    <nav className="hidden container mx-auto  py-6 text-white md:flex items-start justify-start space-x-6 px-24 ">
       <Link
         href="/"
-        className="hover:text-sky-100 duration-150 hover:-translate-y-1 text-lg"
+        className="hover:text-sky-100 -ml-1 duration-150 hover:-translate-y-1 text-lg"
       >
         blog.obradovic
       </Link>

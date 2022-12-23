@@ -2,13 +2,13 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="container mx-auto mt-48 pb-32 px-20">
+    <div className="container mx-auto mt-48 pb-32  px-5 lg:px-20">
       <div className="border-b-2 border-sky-200 my-16 "></div>
-      <h2 className="text-5xl md:text-7xl xl:text-8xl font-semibold text-left  text-white  ">
+      <h2 className="text-4xl md:text-7xl xl:text-8xl font-semibold text-center md:text-left  text-white  ">
         made by antonio obradovic
       </h2>
 
-      <div className="flex items-start space-x-6 mt-12">
+      <div className="flex flex-col lg:flex-row items-center md:items-start space-y-5 lg:space-y-0 lg:space-x-6 mt-12">
         <a
           target="_blank"
           rel="noreferrer"

@@ -13,11 +13,11 @@ const PhotosCTA = () => {
       <div className="flex flex-col lg:flex-row items-top justify-between">
         <div className="relative flex flex-col lg:flex-row lg:w-2/3 ">
           <img
-            src="/images/IMG_1395.jpg"
+            src="https://github.com/AntonioObra/blog/blob/bc442534632f42395ce1fd8a08e4cf0059949d9c/public/images/IMG_1395.JPG?raw=true"
             className=" w-[400px] h-[500px] object-cover"
           />
           <img
-            src="/images/IMG_1492.jpg"
+            src="https://github.com/AntonioObra/blog/blob/bc442534632f42395ce1fd8a08e4cf0059949d9c/public/images/IMG_1492.JPG?raw=true"
             className=" absolute top-20 left-72 w-[500px] h-[500px] object-cover"
           />
         </div>

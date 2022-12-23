@@ -10,7 +10,7 @@ export default function About() {
       <section className="container  pt-20 mx-auto flex flex-col space-y-12 justify-evenly items-top lg:flex-row md:space-y-0 lg:mb-32 ">
         <div className="w-1/3">
           <img
-            src="/images/IMG_1368.jpg"
+            src="https://github.com/AntonioObra/blog/blob/main/public/images/IMG_1368.JPG?raw=true"
             className="hidden lg:block lg:w-[500px] lg:h-[600px]  object-cover"
           />
         </div>
@@ -78,7 +78,7 @@ export default function About() {
 
         <div className="w-1/3">
           <img
-            src="/images/IMG_1360.jpg"
+            src="https://github.com/AntonioObra/blog/blob/main/public/images/IMG_1360.JPG?raw=true"
             className="hidden lg:block lg:w-[500px] lg:h-[600px]  object-cover"
           />
         </div>
@@ -88,7 +88,7 @@ export default function About() {
       <section className="container  pt-20 mx-auto flex flex-col space-y-12 justify-evenly items-top lg:flex-row md:space-y-0 lg:mb-64 ">
         <div className="w-1/3">
           <img
-            src="/images/IMG_1327.jpg"
+            src="https://github.com/AntonioObra/blog/blob/main/public/images/IMG_1327.JPG?raw=true"
             className="hidden lg:block lg:w-[500px] lg:h-[600px]  object-cover"
           />
         </div>

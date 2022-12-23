@@ -3,7 +3,7 @@ import React from "react";
 
 const PhotosCTA = () => {
   return (
-    <div className="container mx-auto mt-32 pb-32 px-20">
+    <div className="container mx-auto mt-32 pb-32 px-5 lg:px-20">
       <h2 className="text-5xl md:text-7xl xl:text-8xl font-semibold text-right  text-white  ">
         photography<br></br> shots
       </h2>
@@ -11,18 +11,18 @@ const PhotosCTA = () => {
       <div className="border-b-2 border-sky-200 my-16 "></div>
 
       <div className="flex flex-col lg:flex-row items-top justify-between">
-        <div className="relative flex flex-col lg:flex-row lg:w-2/3 ">
+        <div className="relative flex flex-col space-y-5 lg:space-y-0 lg:flex-row lg:w-2/3 ">
           <img
             src="https://github.com/AntonioObra/blog/blob/bc442534632f42395ce1fd8a08e4cf0059949d9c/public/images/IMG_1395.JPG?raw=true"
             className=" w-[400px] h-[500px] object-cover"
           />
           <img
             src="https://github.com/AntonioObra/blog/blob/bc442534632f42395ce1fd8a08e4cf0059949d9c/public/images/IMG_1492.JPG?raw=true"
-            className=" absolute top-20 left-72 w-[500px] h-[500px] object-cover"
+            className=" lg:absolute lg:top-20 lg:left-72 w-[500px] h-[500px] object-cover"
           />
         </div>
-        <div className="flex flex-col items-end space-y-16 lg:w-1/3">
-          <h4 className="text-3xl text-white text-right">
+        <div className="flex flex-col items-center lg:items-end space-y-16 lg:w-1/3">
+          <h4 className="text-2xl text-center lg:text-3xl text-white lg:text-right">
             one of my passions is photography and the beauty you can capture
             with it
           </h4>

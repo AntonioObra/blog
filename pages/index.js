@@ -22,8 +22,8 @@ export default function Home({ posts, featuredPosts }) {
       <Navbar />
 
       {/* Header */}
-      <header className="container  pt-20 mx-auto flex flex-col space-y-12 justify-evenly items-top lg:flex-row md:space-y-0 ">
-        <div className="w-2/3 mx-auto lg:w-1/2 lg:mx-0">
+      <header className="container px-5 md:px-0  pt-20 mx-auto flex flex-col space-y-12 justify-evenly items-top lg:flex-row md:space-y-0 ">
+        <div className=" mx-auto lg:w-1/2 lg:mx-0">
           <h1 className="text-6xl md:text-8xl xl:text-9xl font-semibold text-left z-20 text-white ">
             blog. <br></br> obradovic
             {/* <Typewriter
@@ -73,7 +73,7 @@ export default function Home({ posts, featuredPosts }) {
 
       {/* Intersection */}
 
-      <div className=" container mx-auto mt-32 px-20 ">
+      <div className=" container mx-auto mt-32 px-5 lg:px-20 ">
         <div className="border-b-2 border-sky-200 my-10"></div>
         <h2 className="text-5xl text-left md:text-7xl xl:text-8xl font-bold   outline-title">
           <Typewriter

@@ -5,6 +5,8 @@ import PostDetails from "../../components/PostDetails";
 import { getPosts, getPostDetails } from "../../services";
 
 export default function PostView({ post }) {
+  if (!post) return <>Loading...</>;
+
   return (
     <>
       <Navbar />

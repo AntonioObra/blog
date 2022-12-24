@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
@@ -13,42 +12,30 @@ export default function Photos() {
         </h1>
         <div className="border-b-2 border-sky-200 my-16"></div>
         <div className="grid grid-cols-3 gap-6">
-          <Image
-            src="/images/IMG_1492.jpg"
+          <img
+            src="https://github.com/AntonioObra/blog/blob/main/public/images/IMG_1492.JPG?raw=true"
             className="  object-cover lg:col-span-2 col-span-3 lg:h-[600px]"
-            height={1500}
-            width={1500}
           />
-          <Image
-            src="/images/IMG_1292.jpg"
+          <img
+            src="https://github.com/AntonioObra/blog/blob/main/public/images/IMG_1292.JPG?raw=true"
             className="object-cover lg:h-[600px] w-full col-span-3 lg:col-span-1"
-            height={1500}
-            width={1500}
           />
-          <Image
-            src="/images/IMG_1290.jpg"
+          <img
+            src="https://github.com/AntonioObra/blog/blob/main/public/images/IMG_1290.JPG?raw=true"
             className=" object-cover col-span-3 lg:col-span-1"
-            height={1500}
-            width={1500}
           />
-          <Image
-            src="/images/IMG_1283.jpg"
+          <img
+            src="https://github.com/AntonioObra/blog/blob/main/public/images/IMG_1283.JPG?raw=true"
             className="  object-cover col-span-3 lg:col-span-1"
-            height={1500}
-            width={1500}
           />
-          <Image
-            src="/images/IMG_1498.jpg"
-            className="object-cover col-span-3 lg:col-span-1"
-            height={1500}
-            width={1500}
+          <img
+            src="https://github.com/AntonioObra/blog/blob/main/public/images/IMG_1498.JPG?raw=true"
+            className="  object-cover col-span-3 lg:col-span-1"
           />
 
-          <Image
-            src="/images/IMG_1433.jpg"
+          <img
+            src="https://github.com/AntonioObra/blog/blob/main/public/images/IMG_1433.JPG?raw=true"
             className="  object-cover col-span-3"
-            height={1500}
-            width={1500}
           />
         </div>
       </section>

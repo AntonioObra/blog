@@ -88,9 +88,10 @@ const PostDetails = ({ post }) => {
 
       case "code-block":
         return (
-          <PrismLight key={index} style={atomDark} language="javascript">
-            modifiedText
-          </PrismLight>
+          // <PrismLight key={index} style={atomDark} language="javascript">
+          //   modifiedText
+          // </PrismLight>a
+          <></>
         );
       default:
         return modifiedText;

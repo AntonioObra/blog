@@ -9,7 +9,7 @@ const LatestPosts = ({ posts }) => {
 
       <div className="border-b-2 border-sky-200 my-5 lg:my-16 "></div>
 
-      <div className="  max-w-8xl  flex flex-col items-top justify-between space-y-5 md:space-y-0  md:flex-row flex-wrap ">
+      <div className="  max-w-8xl  flex flex-col items-top justify-between space-y-5 md:space-y-0  md:flex-row flex-wrap md:space-x-2">
         {posts &&
           posts.map((post, index) => <PostCard2 key={index} post={post} />)}
       </div>

@@ -101,7 +101,7 @@ const PostDetails = ({ post }) => {
   return (
     <div className="container px-5 lg:px-20 mx-auto mt-32">
       <div className="flex flex-col space-y-5">
-        <h1 className="text-6xl md:text-8xl xl:text-9xl font-semibold text-left  text-white ">
+        <h1 className="text-5xl md:text-8xl xl:text-9xl font-semibold text-left  text-white ">
           {post.title}
         </h1>
         <div className="border-b-2 border-sky-200 py-5"></div>

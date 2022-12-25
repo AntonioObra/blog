@@ -14,7 +14,7 @@ export default function About() {
             className="hidden lg:block lg:w-[500px] lg:h-[600px]  object-cover"
           />
         </div>
-        <div className="w-2/3 mx-auto lg:w-1/2 lg:mx-0">
+        <div className="w-full px-5 lg:px-0 mx-auto lg:w-1/2 lg:mx-0">
           <h1 className="text-6xl md:text-8xl xl:text-9xl font-semibold text-right z-20 text-white md:h-46">
             web <br></br> developer
             {/* <Typewriter
@@ -51,7 +51,7 @@ export default function About() {
 
       {/* books section */}
       <section className="container  pt-20 mx-auto flex flex-col space-y-12 justify-evenly items-top lg:flex-row md:space-y-0 lg:mb-32">
-        <div className="w-2/3 mx-auto lg:w-1/2 lg:mx-0">
+        <div className="w-full px-5 lg:px-0 mx-auto lg:w-1/2 lg:mx-0">
           <h1 className="text-6xl md:text-8xl xl:text-9xl font-semibold text-left z-20 text-white md:h-46">
             book <br></br> worm
           </h1>
@@ -92,7 +92,7 @@ export default function About() {
             className="hidden lg:block lg:w-[500px] lg:h-[600px]  object-cover"
           />
         </div>
-        <div className="w-2/3 mx-auto lg:w-1/2 lg:mx-0">
+        <div className="w-full px-5 lg:px-0 mx-auto lg:w-1/2 lg:mx-0">
           <h1 className="text-6xl md:text-8xl xl:text-9xl font-semibold text-right z-20 text-white md:h-46">
             hardstuck <br></br> silver
           </h1>

@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <div className="h-screen">
       <Navbar />
-      <section className="container  pt-20 mx-auto flex flex-col space-y-12 justify-evenly items-top lg:flex-row md:space-y-0 lg:mb-32 px-20">
+      <section className="container  pt-20 mx-auto flex flex-col space-y-12 justify-evenly items-top lg:flex-row md:space-y-0 lg:mb-32 px-5 lg:px-20">
         <div className=" mx-auto lg:mx-0 w-full">
           <h1 className="text-6xl md:text-8xl xl:text-9xl font-semibold  z-20 text-white md:h-46">
             let&#39;s <br></br>get in touch
@@ -20,7 +20,7 @@ export default function Contact() {
           </h1>
           <div className="border-b-2 border-sky-200 my-10"></div>
 
-          <div className="flex items-start space-x-6">
+          <div className="flex flex-col space-y-5 items-start md:flex-row md:space-y-0 md:space-x-6">
             <a
               target="_blank"
               rel="noreferrer"

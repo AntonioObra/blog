@@ -84,6 +84,7 @@ const PostDetails = ({ post }) => {
             height={obj.height}
             width={obj.width}
             src={obj.url}
+            className="h-48 my-10 w-full md:h-[500px] md:my-16"
           />
         );
 

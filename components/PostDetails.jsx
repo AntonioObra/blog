@@ -99,16 +99,16 @@ const PostDetails = ({ post }) => {
   };
 
   return (
-    <div className="container px-5 lg:px-20 mx-auto mt-32">
+    <div className="container px-5 lg:px-20 mx-auto mt-10 md:mt-32">
       <div className="flex flex-col space-y-5">
         <h1 className="text-5xl md:text-8xl xl:text-9xl font-semibold text-left  text-white ">
           {post.title}
         </h1>
-        <div className="border-b-2 border-sky-200 py-5"></div>
+        <div className="border-b-2 border-sky-200 py-2 md:py-2"></div>
         {/* <Image width={500} height={500} src={post?.featuredImage.url} /> */}
         <img
           src={post.featuredImage.url}
-          className="h-[600px] object-cover pt-16"
+          className="h-[400px] md:h-[600px] object-cover pt-5 md:pt-16"
         />
         <div className="lg:w-2/3 pt-16 mx-auto ">
           {post.content.raw.children.map((typeObj, index) => {

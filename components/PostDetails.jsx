@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import SimilarPosts from "./SimilarPosts";
 
 const PostDetails = ({ post }) => {
   const getContentFragment = (index, text, obj, type) => {
@@ -119,6 +120,11 @@ const PostDetails = ({ post }) => {
             return getContentFragment(index, children, typeObj, typeObj.type);
           })}
         </div>
+
+        <SimilarPosts
+          slug={post.slug}
+          categories={post.categories.map((category) => category.slug)}
+        />
       </div>
     </div>
   );

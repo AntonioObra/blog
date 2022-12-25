@@ -29,7 +29,7 @@ const PhotosCTA = () => {
 
           <Link
             href="/photos"
-            className="text-black bg-sky-200 py-5 px-7 font-bold border-2 border-sky-200 text-center hover:bg-[#0f0f0f] hover:text-sky-200 duration-150"
+            className="text-black bg-sky-200 py-5 px-7 font-bold border-2 border-sky-200 text-center hover:bg-[#0f0f0f] hover:text-sky-200 duration-150 w-full md:w-fit"
           >
             view my gallery
           </Link>

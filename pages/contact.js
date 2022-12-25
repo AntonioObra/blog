@@ -25,7 +25,7 @@ export default function Contact() {
               target="_blank"
               rel="noreferrer"
               href="mailto:antonio@obradovic.dev"
-              className="text-black bg-sky-200 py-5 px-7 font-bold border-2 border-sky-200 text-center hover:bg-[#0f0f0f] hover:text-sky-200 duration-150 "
+              className="text-black bg-sky-200 py-5 px-7 font-bold border-2 border-sky-200 text-center hover:bg-[#0f0f0f] hover:text-sky-200 duration-150 w-full md:w-fit "
             >
               antonio@obradovic.dev
             </a>
@@ -33,7 +33,7 @@ export default function Contact() {
               target="_blank"
               rel="noreferrer"
               href="tel:0953144374"
-              className="text-white bg-sky-700 py-5 px-7 font-bold border-2 border-sky-700 text-center hover:bg-[#0f0f0f] hover:text-sky-700 duration-150 "
+              className="text-white bg-sky-700 py-5 px-7 font-bold border-2 border-sky-700 text-center hover:bg-[#0f0f0f] hover:text-sky-700 duration-150 w-full md:w-fit"
             >
               drop me a call
             </a>

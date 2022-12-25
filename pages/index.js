@@ -41,12 +41,12 @@ export default function Home({ posts, featuredPosts }) {
             journey, reading and videogames
           </p>
           <div className="border-b-2 border-sky-200 my-5 mb-7"></div>
-          <div className="flex items-start space-x-6">
+          <div className="flex flex-col space-x-0 space-y-5 items-start md:space-x-6 md:flex-row md:space-y-0">
             <a
               target="_blank"
               rel="noreferrer"
               href="https://twitter.com/antonioobra8"
-              className="text-black bg-sky-200 py-5 px-7 font-bold border-2 border-sky-200 text-center hover:bg-[#0f0f0f] hover:text-sky-200 duration-150 "
+              className="text-black bg-sky-200 py-5 px-7 font-bold border-2 border-sky-200 text-center hover:bg-[#0f0f0f] hover:text-sky-200 duration-150 w-full md:w-fit"
             >
               follow me on twitter
             </a>
@@ -54,7 +54,7 @@ export default function Home({ posts, featuredPosts }) {
               target="_blank"
               rel="noreferrer"
               href="https://github.com/AntonioObra"
-              className="text-white bg-sky-700 py-5 px-7 font-bold border-2 border-sky-700 text-center hover:bg-[#0f0f0f] hover:text-sky-700 duration-150 "
+              className="text-white bg-sky-700 py-5 px-7 font-bold border-2 border-sky-700 text-center hover:bg-[#0f0f0f] hover:text-sky-700 duration-150  w-full md:w-fit"
             >
               checkout my github
             </a>

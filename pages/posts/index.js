@@ -22,22 +22,22 @@ export default function PostPage({ posts, categories }) {
   };
 
   return (
-    <div>
+    <>
       <Navbar />
       <div className="container mx-auto mt-10 md:mt-32 px-5 lg:px-20">
-        <h2 className="text-6xl  md:text-7xl xl:text-8xl font-semibold text-left  text-white  ">
+        <h2 className="text-6xl  md:text-7xl xl:text-9xl font-semibold text-left  text-white  ">
           all<br></br> posts
         </h2>
         <div className="flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-5 mt-10">
           <h5
-            className="text-white cursor-pointer hover:text-sky-200"
+            className="text-white cursor-pointer hover:text-sky-200 lg:text-xl"
             onClick={() => handleTagFilter("All")}
           >
             All
           </h5>
           {categories.map((category, index) => (
             <h5
-              className="text-white cursor-pointer hover:text-sky-200"
+              className="text-white cursor-pointer lg:text-xl hover:text-sky-200"
               onClick={() => handleTagFilter(category.name)}
               key={index}
             >
@@ -57,7 +57,7 @@ export default function PostPage({ posts, categories }) {
       </div>
 
       <Footer />
-    </div>
+    </>
   );
 }
 

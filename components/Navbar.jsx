@@ -14,6 +14,13 @@ const Navbar = () => {
       </Link>
 
       <Link
+        href="/posts"
+        className="hover:text-sky-100 duration-150 hover:-translate-y-1 text-lg hidden md:block"
+      >
+        posts
+      </Link>
+
+      <Link
         href="/photos"
         className="hover:text-sky-100 duration-150 hover:-translate-y-1 text-lg hidden md:block"
       >
@@ -56,6 +63,14 @@ const Navbar = () => {
             className=" hover:text-sky-100 -ml-1 duration-150 hover:-translate-y-1 text-lg"
           >
             blog.obradovic
+          </Link>
+        </div>
+        <div className="w-full py-3 text-center">
+          <Link
+            href="/posts"
+            className=" hover:text-sky-100 -ml-1 duration-150 hover:-translate-y-1 text-lg"
+          >
+            posts
           </Link>
         </div>
         <div className="w-full py-3 text-center">

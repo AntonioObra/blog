@@ -27,6 +27,9 @@ export default function Home({ posts, featuredPosts }) {
           property="og:image"
           content="https://blog.obradovic.dev/images/blob6.svg"
         />
+        <meta property="og:image:width" content="1200" />
+
+        <meta property="og:image:height" content="630" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

@@ -61,7 +61,10 @@ export default function Home({ posts, featuredPosts }) {
           </div>
         </div>
         <div className="">
-          <img
+          <Image
+            width={500}
+            height={500}
+            alt="blob header image"
             src="/images/blob6.svg"
             className="hidden lg:block lg:w-[500px] lg:h-[500px]  "
           />

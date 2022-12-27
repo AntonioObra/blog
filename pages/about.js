@@ -84,7 +84,7 @@ export default function About() {
           <Image
             width={1500}
             height={1500}
-            src="https://github.com/AntonioObra/blog/blob/main/public/images/IMG_1360.JPG?raw=true"
+            src="/images/IMG_1360.JPG"
             className="hidden lg:block lg:w-[500px] lg:h-[600px]  object-cover"
           />
         </div>
@@ -94,7 +94,7 @@ export default function About() {
       <section className="container  pt-20 mx-auto flex flex-col space-y-12 justify-evenly items-top lg:flex-row md:space-y-0 lg:mb-64 ">
         <div className="w-1/3">
           <Image
-            src="https://github.com/AntonioObra/blog/blob/main/public/images/IMG_1327.JPG?raw=true"
+            src="/images/IMG_1327.JPG"
             className="hidden lg:block lg:w-[500px] lg:h-[600px]  object-cover"
             width={1500}
             height={1500}

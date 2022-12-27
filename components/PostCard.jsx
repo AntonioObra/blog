@@ -9,7 +9,7 @@ const PostCard = ({ post }) => {
       <Link href={`/posts/${post.slug}`}>
         <Image
           src={post.featuredImage.url}
-          alt=""
+          alt={`Post ${post.title} Image`}
           className="h-1/2 w-full object-cover grayscale group-hover:grayscale-0 duration-150"
           width={500}
           height={500}

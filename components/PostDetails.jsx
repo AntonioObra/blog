@@ -67,7 +67,7 @@ const PostDetails = ({ post }) => {
         );
       case "image":
         return (
-          <img
+          <Image
             key={index}
             alt={obj.title}
             height={obj.height}
@@ -113,6 +113,7 @@ const PostDetails = ({ post }) => {
           height={1500}
           src={post.featuredImage.url}
           className="h-[400px] md:h-[600px] object-cover pt-5 md:pt-16"
+          alt={`Post ${post.title} Image`}
         />
         <div className="lg:w-2/3 pt-16 mx-auto ">
           {post.content.raw.children.map((typeObj, index) => {

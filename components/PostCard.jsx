@@ -1,4 +1,5 @@
 import moment from "moment/moment";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -6,10 +7,12 @@ const PostCard = ({ post }) => {
   return (
     <div className="w-full md:w-[400px] h-[450px]  mb-24 p-2 cursor-pointer group  duration-300">
       <Link href={`/posts/${post.slug}`}>
-        <img
+        <Image
           src={post.featuredImage.url}
           alt=""
           className="h-1/2 w-full object-cover grayscale group-hover:grayscale-0 duration-150"
+          width={500}
+          height={500}
         />
         <p className="text-gray-300 mt-2 text-sm">
           {moment(post.createdAt).format("MMM DD, YYYY")}

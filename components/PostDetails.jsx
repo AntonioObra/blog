@@ -108,7 +108,9 @@ const PostDetails = ({ post }) => {
         </h1>
         <div className="border-b-2 border-sky-200 py-2 md:py-2"></div>
         {/* <Image width={500} height={500} src={post?.featuredImage.url} /> */}
-        <img
+        <Image
+          width={2500}
+          height={1500}
           src={post.featuredImage.url}
           className="h-[400px] md:h-[600px] object-cover pt-5 md:pt-16"
         />

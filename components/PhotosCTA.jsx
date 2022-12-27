@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -12,13 +13,17 @@ const PhotosCTA = () => {
 
       <div className="flex flex-col lg:flex-row items-top justify-between">
         <div className="relative flex flex-col space-y-5 lg:space-y-0 lg:flex-row lg:w-2/3 ">
-          <img
+          <Image
             src="https://github.com/AntonioObra/blog/blob/bc442534632f42395ce1fd8a08e4cf0059949d9c/public/images/IMG_1395.JPG?raw=true"
             className=" w-[400px] h-[500px] object-cover"
+            width={1500}
+            height={1500}
           />
-          <img
+          <Image
             src="https://github.com/AntonioObra/blog/blob/bc442534632f42395ce1fd8a08e4cf0059949d9c/public/images/IMG_1492.JPG?raw=true"
             className=" lg:absolute lg:top-20 lg:left-72 w-[500px] h-[500px] object-cover"
+            width={1500}
+            height={1500}
           />
         </div>
         <div className="flex flex-col items-center lg:items-end space-y-16 lg:w-1/3">

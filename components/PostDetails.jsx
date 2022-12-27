@@ -114,6 +114,7 @@ const PostDetails = ({ post }) => {
           src={post.featuredImage.url}
           className="h-[400px] md:h-[600px] object-cover pt-5 md:pt-16"
           alt={`Post ${post.title} Image`}
+          priority={true}
         />
         <div className="lg:w-2/3 pt-16 mx-auto ">
           {post.content.raw.children.map((typeObj, index) => {

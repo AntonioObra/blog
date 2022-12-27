@@ -19,6 +19,7 @@ export default function Photos() {
             width={1500}
             height={1500}
             alt="Around the abandoned hospital in Zagreb"
+            priority={true}
           />
           <Image
             src="/images/IMG_1292.JPG"
@@ -26,6 +27,7 @@ export default function Photos() {
             width={1500}
             height={1500}
             alt="Around the abandoned hospital in Zagreb"
+            priority={true}
           />
           <Image
             src="/images/IMG_1290.JPG"
@@ -33,6 +35,7 @@ export default function Photos() {
             width={1500}
             height={1500}
             alt="Around the abandoned hospital in Zagreb"
+            priority={true}
           />
           <Image
             src="/images/IMG_1283.JPG"
@@ -40,6 +43,7 @@ export default function Photos() {
             width={1500}
             height={1500}
             alt="Around the abandoned hospital in Zagreb"
+            priority={true}
           />
           <Image
             src="/images/IMG_1498.JPG"
@@ -47,6 +51,7 @@ export default function Photos() {
             width={1500}
             height={1500}
             alt="Around the abandoned hospital in Zagreb"
+            priority={true}
           />
 
           <Image
@@ -55,6 +60,7 @@ export default function Photos() {
             width={1500}
             height={1500}
             alt="Around the abandoned hospital in Zagreb"
+            priority={true}
           />
         </div>
       </section>

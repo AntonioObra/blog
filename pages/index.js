@@ -19,7 +19,14 @@ export default function Home({ posts, featuredPosts }) {
           name="description"
           content="Blog made by Antonio Obradović, posts about web dev, reading and videogame breakdowns."
         />
-        <meta property="og:image" content="/images/blog6.svg" />
+        <meta
+          property="og:description"
+          content="Blog made by Antonio Obradović, posts about web dev, reading and videogame breakdowns."
+        />
+        <meta
+          property="og:image"
+          content="https://blog.obradovic.dev/images/blob6.svg"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

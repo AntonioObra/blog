@@ -25,7 +25,7 @@ export default function Home({ posts, featuredPosts }) {
         />
         <meta
           property="og:image"
-          content="https://blog.obradovic.dev/images/blob6.svg"
+          content="https://cdn.images.express.co.uk/img/dynamic/78/590x/secondary/carrot-635578.jpg"
         />
         <meta property="og:image:width" content="1200" />
 

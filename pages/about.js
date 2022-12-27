@@ -13,7 +13,8 @@ export default function About() {
           <Image
             width={1500}
             height={1500}
-            src="https://github.com/AntonioObra/blog/blob/main/public/images/IMG_1368.JPG?raw=true"
+            // src="https://github.com/AntonioObra/blog/blob/main/public/images/IMG_1368.JPG?raw=true"
+            src="/images/IMG_1368.JPG"
             className="hidden lg:block lg:w-[500px] lg:h-[600px]  object-cover"
           />
         </div>

@@ -17,7 +17,7 @@ const SimilarPosts = ({ slug, categories }) => {
         setRelatedPosts(result);
       });
     }
-  }, [slug]);
+  }, [slug, categories]);
 
   return (
     <div className="pt-32 md:pt-64">

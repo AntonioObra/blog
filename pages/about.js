@@ -13,7 +13,7 @@ export default function About() {
           <Image
             width={1500}
             height={1500}
-            // src="https://github.com/AntonioObra/blog/blob/main/public/images/IMG_1368.JPG?raw=true"
+            alt="Image IMG_1368 taken in the hospital in Zagreb"
             src="/images/IMG_1368.JPG"
             className="hidden lg:block lg:w-[500px] lg:h-[600px]  object-cover"
           />
@@ -86,6 +86,7 @@ export default function About() {
             height={1500}
             src="/images/IMG_1360.JPG"
             className="hidden lg:block lg:w-[500px] lg:h-[600px]  object-cover"
+            alt="Image IMG_1360 taken in the hospital in Zagreb"
           />
         </div>
       </section>
@@ -98,6 +99,7 @@ export default function About() {
             className="hidden lg:block lg:w-[500px] lg:h-[600px]  object-cover"
             width={1500}
             height={1500}
+            alt="Image IMG_1327 taken in the hospital in Zagreb"
           />
         </div>
         <div className="w-full px-5 lg:px-0 mx-auto lg:w-1/2 lg:mx-0">

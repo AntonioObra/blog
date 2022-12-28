@@ -16,6 +16,7 @@ export default function About() {
             alt="Image IMG_1368 taken in the hospital in Zagreb"
             src="/images/IMG_1368.JPG"
             className="hidden lg:block lg:w-[500px] lg:h-[600px]  object-cover"
+            priority={true}
           />
         </div>
         <div className="w-full px-5 lg:px-0 mx-auto lg:w-1/2 lg:mx-0">

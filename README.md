@@ -13,5 +13,5 @@ App consists of couple pages including /about, /photos, and /posts.
 
 - [Posts](https:blog.obradovic.dev/posts) - archive of my posts with a category filter.
   
-<img src="/public/images/postsIMG.png" alt="Posts Image preview" style="height: 400px; width:1000px;"/>
+<img src="/public/images/postsIMG.png" alt="Posts Image preview" style="height: 500px; width:1000px;"/>
 

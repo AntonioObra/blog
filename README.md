@@ -1,6 +1,8 @@
-#blog.obradovic
+# blog.obradovic
 
 This is a simple next.js application with a graphcms backend used as my place for documenting my journey regarding web development, reading and writing, and breaking down games I find influential to talk about.
+
+![blog.obradovic header logo](/public/images/blob6.svg "Header logo")
 
 > **Tailwind:** This is also my first project using TailwindCSS and am never going back.
 

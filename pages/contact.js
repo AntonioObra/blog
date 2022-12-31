@@ -1,5 +1,4 @@
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 export default function Contact() {
   return (
@@ -9,14 +8,6 @@ export default function Contact() {
         <div className=" mx-auto lg:mx-0 w-full">
           <h1 className="text-6xl md:text-8xl xl:text-9xl font-semibold  z-20 text-white md:h-46">
             let&#39;s <br></br>get in touch
-            {/* <Typewriter
-              options={{
-                strings: ["web <br> developer", "book <br> worm"],
-                autoStart: true,
-                loop: true,
-              }}
-              style={{ color: "white" }}
-            /> */}
           </h1>
           <div className="border-b-2 border-sky-200 my-10"></div>
 

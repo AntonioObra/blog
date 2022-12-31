@@ -40,14 +40,6 @@ export default function Home({ posts, featuredPosts }) {
         <div className=" mx-auto lg:w-1/2 lg:mx-0">
           <h1 className="text-6xl md:text-8xl xl:text-9xl font-semibold text-left z-20 text-white ">
             blog. <br></br> obradovic
-            {/* <Typewriter
-              options={{
-                strings: ["obradovic", "dev", "photos", "reading"],
-                autoStart: true,
-                loop: true,
-              }}
-              style={{ color: "white" }}
-            /> */}
           </h1>
           <div className="border-b-2 border-sky-200 my-5"></div>
           <p className="text-xl text-white">

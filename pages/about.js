@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import Typewriter from "typewriter-effect";
 
 export default function About() {
   return (
@@ -22,14 +21,6 @@ export default function About() {
         <div className="w-full px-5 lg:px-0 mx-auto lg:w-1/2 lg:mx-0">
           <h1 className="text-6xl md:text-8xl xl:text-9xl font-semibold text-right z-20 text-white md:h-46">
             web <br></br> developer
-            {/* <Typewriter
-              options={{
-                strings: ["web <br> developer", "book <br> worm"],
-                autoStart: true,
-                loop: true,
-              }}
-              style={{ color: "white" }}
-            /> */}
           </h1>
           <div className="border-b-2 border-sky-200 my-5"></div>
           <p className="text-xl text-white text-right ">

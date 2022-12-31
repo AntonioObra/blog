@@ -2,7 +2,6 @@ import react, { useState } from "react";
 
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
-import Head from "next/head";
 import { getCategories, getPosts } from "../../services";
 import PostCard from "../../components/PostCard";
 

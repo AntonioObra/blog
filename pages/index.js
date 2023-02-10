@@ -12,7 +12,7 @@ import Footer from "../components/Footer";
 
 export default function Home({ posts, featuredPosts }) {
   return (
-    <div className="h-screen">
+    <div className="min-h-screen dark:bg-black">
       <Head>
         <title>blog.obradovic</title>
         <meta
@@ -38,21 +38,21 @@ export default function Home({ posts, featuredPosts }) {
       {/* Header */}
       <header className="container px-5 md:px-0  pt-20 mx-auto flex flex-col space-y-12 justify-evenly items-top lg:flex-row md:space-y-0 ">
         <div className=" mx-auto lg:w-1/2 lg:mx-0">
-          <h1 className="text-6xl md:text-8xl xl:text-9xl font-semibold text-left z-20 text-white ">
+          <h1 className="text-6xl md:text-8xl xl:text-9xl font-semibold text-left z-20 dark:text-white ">
             blog. <br></br> obradovic
           </h1>
-          <div className="border-b-2 border-sky-200 my-5"></div>
-          <p className="text-xl text-white">
+          <div className="border-b-4 border-sky-600 dark:border-sky-200 my-5"></div>
+          <p className="text-xl dark:text-white">
             byte of the internet for my thoughts regarding my web development
             journey, reading and videogames
           </p>
-          <div className="border-b-2 border-sky-200 my-5 mb-7"></div>
+          <div className="border-b-4 border-sky-600 dark:border-sky-200 my-5 mb-7"></div>
           <div className="flex flex-col space-x-0 space-y-5 items-start md:space-x-6 md:flex-row md:space-y-0">
             <a
               target="_blank"
               rel="noreferrer"
               href="https://twitter.com/antonioobra8"
-              className="text-black bg-sky-200 py-5 px-7 font-bold border-2 border-sky-200 text-center hover:bg-[#0f0f0f] hover:text-sky-200 duration-150 w-full md:w-fit"
+              className="text-white bg-sky-600 py-5 px-7 font-bold border-4 border-sky-600 text-center hover:bg-transparent hover:text-sky-600 duration-150 w-full md:w-fit"
             >
               follow me on twitter
             </a>
@@ -60,7 +60,7 @@ export default function Home({ posts, featuredPosts }) {
               target="_blank"
               rel="noreferrer"
               href="https://github.com/AntonioObra"
-              className="text-white bg-sky-700 py-5 px-7 font-bold border-2 border-sky-700 text-center hover:bg-[#0f0f0f] hover:text-sky-700 duration-150  w-full md:w-fit"
+              className="text-white bg-sky-800 py-5 px-7 font-bold border-4 border-sky-800 text-center hover:bg-transparent hover:text-sky-800 duration-150  w-full md:w-fit"
             >
               checkout my github
             </a>
@@ -83,7 +83,7 @@ export default function Home({ posts, featuredPosts }) {
       {/* Intersection */}
 
       <div className=" container mx-auto mt-32 px-5 lg:px-20 ">
-        <div className="border-b-2 border-sky-200 my-10"></div>
+        <div className="border-b-4 border-sky-600 dark:border-sky-200 my-10"></div>
         <h2 className="text-5xl text-left md:text-7xl xl:text-8xl font-bold   outline-title">
           <Typewriter
             options={{
@@ -99,7 +99,7 @@ export default function Home({ posts, featuredPosts }) {
             style={{ color: "white" }}
           />
         </h2>
-        <div className="border-b-2 border-sky-200 my-10"></div>
+        <div className="border-b-4 border-sky-600 dark:border-sky-200 my-10"></div>
       </div>
 
       {/* Editor Picks */}

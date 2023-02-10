@@ -14,13 +14,15 @@ const PostCard = ({ post }) => {
           width={500}
           height={500}
         />
-        <p className="text-gray-300 mt-2 text-sm">
+        <p className="text-gray-700 dark:text-gray-300 mt-2 text-sm">
           {moment(post.createdAt).format("MMM DD, YYYY")}
         </p>
-        <h1 className="text-white text-2xl mt-2 line-clamp-2   group-hover:text-sky-200 duration-300 ">
+        <h1 className="dark:text-white text-2xl mt-2 line-clamp-2   group-hover:text-sky-600 dark:group-hover:text-sky-200 duration-300 ">
           {post.title}
         </h1>
-        <p className="text-gray-300 line-clamp-4 mt-2">{post.excerpt}</p>
+        <p className="text-gray-800 dark:text-gray-300 line-clamp-4 mt-2">
+          {post.excerpt}
+        </p>
       </Link>
     </div>
   );

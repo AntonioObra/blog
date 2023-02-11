@@ -39,6 +39,12 @@ const Navbar = () => {
       >
         contact
       </Link>
+      <Link
+        href="/goals"
+        className="hover:text-sky-100 duration-150 hover:-translate-y-1 text-lg hidden md:block"
+      >
+        goals
+      </Link>
 
       <button
         id="menu-btn"
@@ -89,6 +95,15 @@ const Navbar = () => {
             about
           </Link>
         </div>
+        <div className="w-full py-3 text-center">
+          <Link
+            href="/goals"
+            className="hover:text-sky-100 duration-150 hover:-translate-y-1 text-lg "
+          >
+            goals
+          </Link>
+        </div>
+
         <div className="w-full py-3 text-center">
           <Link
             href="/contact"

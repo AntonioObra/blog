@@ -266,3 +266,16 @@ export const getRecentPosts = async () => {
 
   return result.posts;
 };
+
+export const getGoalMoney = async () => {
+  const query = gql`
+    query getGoalMoney() {
+      goals {
+        money
+      }
+    }
+  `;
+  const result = await request(graphqlAPI, query);
+
+  return result;
+};

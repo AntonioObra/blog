@@ -14,8 +14,8 @@ export default function Goals({ goalMoney }) {
           <Image
             width={1500}
             height={1500}
-            alt="Image IMG_1368 taken in the hospital in Zagreb"
-            src="/images/ferrari.JPG"
+            alt="Image of a ferrari 488"
+            src="/images/ferrari.jpg"
             className="w-full h-[400px]  lg:h-[600px]  object-cover"
             priority={true}
           />

@@ -84,7 +84,7 @@ export default function Home({ posts, featuredPosts }) {
 
       <div className=" container mx-auto mt-32 px-5 lg:px-20 ">
         <div className="border-b-4 border-sky-600 dark:border-sky-200 my-10"></div>
-        <h2 className="text-5xl text-left md:text-7xl xl:text-8xl font-bold   outline-title">
+        <h2 className="text-5xl text-left md:text-7xl xl:text-8xl font-bold   outline-title text-[#ece7e5] dark:text-black stroke-sky-600 dark:stroke-sky-300 ">
           <Typewriter
             options={{
               strings: [
@@ -96,7 +96,6 @@ export default function Home({ posts, featuredPosts }) {
               autoStart: true,
               loop: true,
             }}
-            style={{ color: "white" }}
           />
         </h2>
         <div className="border-b-4 border-sky-600 dark:border-sky-200 my-10"></div>

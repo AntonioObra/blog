@@ -21,7 +21,7 @@ const SimilarPosts = ({ slug, categories }) => {
 
   return (
     <div className="pt-32 md:pt-64">
-      <h2 className="text-5xl  md:text-7xl xl:text-8xl font-semibold text-right  text-white  ">
+      <h2 className="text-5xl  md:text-7xl xl:text-8xl font-semibold text-right  dark:text-white  ">
         similar<br></br> posts
       </h2>
 

@@ -47,7 +47,7 @@ export default function PostPage({ posts, categories }) {
 
         <div className="border-b-2 border-sky-200 my-5 md:my-10 "></div>
 
-        <div className="  lg:max-w-8xl  flex flex-col items-top justify-between space-y-5 md:space-y-0  md:flex-row flex-wrap ">
+        <div className="lg:max-w-8xl flex flex-col items-top justify-between space-y-5 md:space-y-0 md:flex-row flex-wrap ">
           {posts &&
             filterPosts.map((post, index) => (
               <PostCard key={index} post={post.node} />

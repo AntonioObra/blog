@@ -12,7 +12,7 @@ import Footer from "../components/Footer";
 
 export default function Home({ posts, featuredPosts }) {
   return (
-    <div className="min-h-screen dark:bg-black">
+    <div className="min-h-screen dark:bg-[#0a0a0a]">
       <Head>
         <title>blog.obradovic</title>
         <meta

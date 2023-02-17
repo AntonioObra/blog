@@ -11,7 +11,7 @@
 //test
 
 body {
-  @apply bg-white dark:bg-black;
+  @apply bg-[#FBFBFB] dark:bg-[#2D2D2D] scrollbar-thin scrollbar-thumb-sky-700 scrollbar-track-blue-200 dark:scrollbar-track-black  overflow-y-scroll;
 }
 
 ::selection {
@@ -53,9 +53,11 @@ body {
   height: 3px;
   top: 6px;
   left: 0;
-  background: white;
+
   transform: rotate(0);
   transition: all 0.5s;
+
+  @apply bg-black dark:bg-white;
 }
 
 .hamburger-middle {
@@ -64,7 +66,7 @@ body {
 
 .hamburger-bottom {
   transform: translateY(14px);
-  background: white;
+  @apply bg-black dark:bg-white;
 }
 
 .open {

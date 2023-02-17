@@ -10,7 +10,6 @@ export default function PostView({ post }) {
     <>
       <Navbar />
       <PostDetails post={post} />
-
       <Footer />
     </>
   );

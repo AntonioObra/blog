@@ -25,7 +25,7 @@ const SimilarPosts = ({ slug, categories }) => {
         similar<br></br> posts
       </h2>
 
-      <div className="border-b-2 border-sky-200 my-5 lg:my-16 "></div>
+      <div className="border-b-4 border-sky-200 my-5 lg:my-16 "></div>
       <div className="max-w-8xl  flex flex-col items-top justify-between space-y-5 md:space-y-0  md:flex-row flex-wrap md:space-x-2">
         {relatedPosts.map((post, index) => (
           <PostCard2 post={post} key={index} />

@@ -5,7 +5,7 @@ import React from "react";
 
 const PostCard = ({ post }) => {
   return (
-    <div className="w-full md:w-[400px] h-[450px]  mb-24 p-2 cursor-pointer group  duration-300">
+    <div className="w-full md:w-[30%] h-[450px]  mb-24 p-2 cursor-pointer group  duration-300">
       <Link href={`/posts/${post.slug}`}>
         <Image
           src={post.featuredImage.url}

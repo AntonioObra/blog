@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 
 export default function Contact() {
   return (
-    <div className="h-screen">
+    <div className="min-h-screen dark:bg-[#0a0a0a]">
       <Navbar />
       <section className="container  pt-20 mx-auto flex flex-col space-y-12 justify-evenly items-top lg:flex-row md:space-y-0 lg:mb-32 px-5 lg:px-20">
         <div className=" mx-auto lg:mx-0 w-full">
@@ -26,7 +26,7 @@ export default function Contact() {
               href="tel:0953144374"
               className="text-white bg-sky-700 py-5 px-7 font-bold border-2 border-sky-700 text-center hover:bg-[#0f0f0f] hover:text-sky-700 duration-150 w-full md:w-fit"
             >
-              drop me a call
+              +385 095 314 4374
             </a>
           </div>
         </div>

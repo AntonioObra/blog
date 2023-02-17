@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 
 export default function Photos() {
   return (
-    <div>
+    <div className="min-h-screen dark:bg-[#0a0a0a]">
       <Navbar />
 
       <section className="container px-5 lg:px-20 mt-32 mx-auto  ">

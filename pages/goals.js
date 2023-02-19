@@ -7,8 +7,7 @@ export default function Goals({ goalMoney }) {
   console.log(goalMoney.goals[0].money);
 
   return (
-    <div className="h-screen">
-      <Navbar />
+    <div className="min-h-screen dark:bg-[#0a0a0a]">
       <section className="container px-5 lg:px-20 pt-20 mx-auto flex flex-col space-y-12 justify-evenly items-top lg:flex-row md:space-y-0 lg:mb-32 lg:space-x-12 ">
         <div className="w-full lg:w-1/2">
           <Image
@@ -21,13 +20,13 @@ export default function Goals({ goalMoney }) {
           />
         </div>
         <div className="w-full px-5 lg:px-0 mx-auto lg:w-1/2 lg:mx-0">
-          <h1 className="text-6xl md:text-8xl xl:text-9xl font-semibold text-right z-20 text-white md:h-46">
+          <h1 className="text-6xl md:text-8xl xl:text-9xl font-semibold text-right z-20 dark:text-white md:h-46">
             goal <br></br> for 2027
           </h1>
-          <div className="border-b-2 border-sky-200 my-5"></div>
-          <p className="text-xl text-white text-right ">ferrari 485 v8</p>
-          <div className="border-b-2 border-sky-200 my-5 mb-7"></div>
-          <p className="text-xl text-white text-right ">
+          <div className="border-b-4 border-indigo-400 my-5"></div>
+          <p className="text-xl dark:text-white text-right ">ferrari 485 v8</p>
+          <div className="border-b-4 border-indigo-400 my-5 mb-7"></div>
+          <p className="text-xl dark:text-white text-right ">
             {goalMoney.goals[0].money} € / 187.500 €
           </p>
         </div>

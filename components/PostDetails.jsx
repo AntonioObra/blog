@@ -9,7 +9,7 @@ const PostDetails = ({ post }) => {
     if (obj) {
       if (obj.bold) {
         modifiedText = (
-          <b key={index} className="text-white">
+          <b key={index} className="dark:text-white">
             {text}
           </b>
         );
@@ -17,7 +17,7 @@ const PostDetails = ({ post }) => {
 
       if (obj.italic) {
         modifiedText = (
-          <em key={index} className="text-white">
+          <em key={index} className="dark:text-white">
             {text}
           </em>
         );
@@ -25,7 +25,7 @@ const PostDetails = ({ post }) => {
 
       if (obj.underline) {
         modifiedText = (
-          <u key={index} className="text-white">
+          <u key={index} className="dark:text-white">
             {text}
           </u>
         );
@@ -35,7 +35,10 @@ const PostDetails = ({ post }) => {
     switch (type) {
       case "heading-two":
         return (
-          <h2 key={index} className="text-3xl text-white font-semibold mb-4">
+          <h2
+            key={index}
+            className="text-3xl dark:text-white font-semibold mb-4"
+          >
             {modifiedText.map((item, i) => (
               <React.Fragment key={i}>{item}</React.Fragment>
             ))}
@@ -43,7 +46,10 @@ const PostDetails = ({ post }) => {
         );
       case "heading-three":
         return (
-          <h3 key={index} className="text-2xl text-white font-semibold mb-4">
+          <h3
+            key={index}
+            className="text-2xl dark:text-white font-semibold mb-4"
+          >
             {modifiedText.map((item, i) => (
               <React.Fragment key={i}>{item}</React.Fragment>
             ))}
@@ -51,7 +57,7 @@ const PostDetails = ({ post }) => {
         );
       case "paragraph":
         return (
-          <p key={index} className="mb-8 text-white ">
+          <p key={index} className="mb-8 dark:text-white ">
             {modifiedText.map((item, i) => (
               <React.Fragment key={i}>{item}</React.Fragment>
             ))}
@@ -59,7 +65,10 @@ const PostDetails = ({ post }) => {
         );
       case "heading-four":
         return (
-          <h4 key={index} className="text-xl  text-white font-semibold mb-4">
+          <h4
+            key={index}
+            className="text-xl  dark:text-white font-semibold mb-4"
+          >
             {modifiedText.map((item, i) => (
               <React.Fragment key={i}>{item}</React.Fragment>
             ))}
@@ -101,12 +110,12 @@ const PostDetails = ({ post }) => {
   };
 
   return (
-    <div className="container px-5 lg:px-20 mx-auto mt-10 md:mt-32">
+    <div className="container px-5 lg:px-20 mx-auto pt-10 md:pt-32 ">
       <div className="flex flex-col space-y-5">
-        <h1 className="text-5xl md:text-8xl xl:text-9xl font-semibold text-left  text-white ">
+        <h1 className="text-5xl md:text-6xl xl:text-8xl 2xl:text-9xl font-semibold text-left  dark:text-white ">
           {post.title}
         </h1>
-        <div className="border-b-2 border-sky-200 py-2 md:py-2"></div>
+        <div className="border-b-4 border-indigo-400 py-2 md:py-2"></div>
         {/* <Image width={500} height={500} src={post?.featuredImage.url} /> */}
         <Image
           width={2500}

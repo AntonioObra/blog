@@ -7,12 +7,10 @@ export default function PostView({ post }) {
   if (!post) return <>Loading...</>;
 
   return (
-    <>
-      <Navbar />
+    <section className="dark:bg-[#0a0a0a]">
       <PostDetails post={post} />
-
       <Footer />
-    </>
+    </section>
   );
 }
 

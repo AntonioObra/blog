@@ -4,12 +4,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
 
-// body {
-//   @apply bg-[#0f0f0f];
-// }
-
-//test
-
 body {
   @apply bg-[#ECE7E5] dark:bg-[#2D2D2D] scrollbar-thin scrollbar-thumb-indigo-400 scrollbar-track-indigo-300 overflow-y-scroll;
 }
@@ -18,15 +12,6 @@ body {
   @apply bg-indigo-400 text-black;
 }
 
-// .postCardIcon {
-//   filter: invert(53%) sepia(38%) saturate(330%) hue-rotate(326deg)
-//     brightness(101%) contrast(96%);
-// }
-
-// .postCardIcon:hover {
-//   filter: invert(53%) sepia(38%) saturate(3303%) hue-rotate(326deg)
-//     brightness(101%) contrast(96%);
-// }
 .outline-title {
   -webkit-text-stroke: 2px #818cf8;
   -webkit-font-smoothing: antialiased;
@@ -41,6 +26,8 @@ body {
   height: 24px;
   transition: all 0.25s;
   position: relative;
+  top: 6px;
+  right: 0;
 }
 
 .hamburger-top,
@@ -50,8 +37,8 @@ body {
   position: absolute;
   width: 24px;
   height: 3px;
-  top: 6px;
-  left: 0;
+  top: 2px;
+  right: 0;
 
   transform: rotate(0);
   transition: all 0.5s;
@@ -66,12 +53,6 @@ body {
 .hamburger-bottom {
   transform: translateY(14px);
   @apply bg-black dark:bg-white;
-}
-
-.open {
-  transform: rotate(90deg);
-  transform: translateY(0px);
-  position: fixed;
 }
 
 .open .hamburger-top {

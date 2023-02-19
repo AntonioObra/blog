@@ -112,5 +112,6 @@ export const getStaticProps = async () => {
       posts,
       featuredPosts,
     },
+    revalidate: 100,
   };
 };

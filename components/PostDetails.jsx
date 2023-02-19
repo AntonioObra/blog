@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import SimilarPosts from "./SimilarPosts";
+import Link from "next/link";
 
 const PostDetails = ({ post }) => {
   const getContentFragment = (index, text, obj, type) => {
@@ -28,6 +29,27 @@ const PostDetails = ({ post }) => {
           <u key={index} className="dark:text-white">
             {text}
           </u>
+        );
+      }
+
+      if (obj.href) {
+        console.log(obj);
+        console.log(obj.href);
+        modifiedText = (
+          <a
+            key={index}
+            href={obj.href}
+            className="w-min"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            {obj.children.map((child, i) => (
+              <span key={i} className="text-indigo-400 hover:underline">
+                {child.text}
+              </span>
+            ))}
+          </a>
         );
       }
     }

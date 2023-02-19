@@ -9,6 +9,7 @@ import { getFeaturedPosts, getPosts } from "../services";
 import LatestPosts from "../components/LatestPosts";
 import PhotosCTA from "../components/PhotosCTA";
 import Footer from "../components/Footer";
+import Button from "../components/Button";
 
 export default function Home({ posts, featuredPosts }) {
   return (
@@ -41,29 +42,23 @@ export default function Home({ posts, featuredPosts }) {
           <h1 className="text-6xl md:text-8xl xl:text-9xl font-semibold text-left z-20 dark:text-white ">
             blog. <br></br> obradovic
           </h1>
-          <div className="border-b-4 border-sky-600 dark:border-sky-200 my-5"></div>
+          <div className="border-b-4 border-indigo-600 my-5"></div>
           <p className="text-xl dark:text-white">
             byte of the internet for my thoughts regarding my web development
             journey, reading and videogames
           </p>
-          <div className="border-b-4 border-sky-600 dark:border-sky-200 my-5 mb-7"></div>
+          <div className="border-b-4 border-indigo-600 my-5 mb-7"></div>
           <div className="flex flex-col space-x-0 space-y-5 items-start md:space-x-6 md:flex-row md:space-y-0">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://twitter.com/antonioobra8"
-              className="text-white bg-sky-600 py-5 px-7 font-bold border-4 border-sky-600 text-center hover:bg-transparent hover:text-sky-600 duration-150 w-full md:w-fit"
-            >
-              follow me on twitter
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://github.com/AntonioObra"
-              className="text-white bg-sky-800 py-5 px-7 font-bold border-4 border-sky-800 text-center hover:bg-transparent hover:text-sky-800 duration-150  w-full md:w-fit"
-            >
-              checkout my github
-            </a>
+            <Button
+              text="follow me on twitter"
+              link="https://twitter.com/antonioobra8"
+              variant="light"
+            />
+            <Button
+              text="checkout my github"
+              link="https://github.com/AntonioObra"
+              variant="dark"
+            />
           </div>
         </div>
         <div className="">
@@ -81,10 +76,9 @@ export default function Home({ posts, featuredPosts }) {
       <LatestPosts posts={posts} />
 
       {/* Intersection */}
-
       <div className=" container mx-auto mt-32 px-5 lg:px-20 ">
-        <div className="border-b-4 border-sky-600 dark:border-sky-200 my-10"></div>
-        <h2 className="text-5xl text-left md:text-7xl xl:text-8xl font-bold   outline-title text-[#ece7e5] dark:text-black stroke-sky-600 dark:stroke-sky-300 ">
+        <div className="border-b-4 border-indigo-600 my-10"></div>
+        <h2 className="text-5xl text-left md:text-7xl xl:text-8xl font-bold   outline-title text-transparent">
           <Typewriter
             options={{
               strings: [
@@ -98,7 +92,7 @@ export default function Home({ posts, featuredPosts }) {
             }}
           />
         </h2>
-        <div className="border-b-4 border-sky-600 dark:border-sky-200 my-10"></div>
+        <div className="border-b-4 border-indigo-600 my-10"></div>
       </div>
 
       {/* Editor Picks */}

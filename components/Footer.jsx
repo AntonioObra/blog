@@ -1,30 +1,25 @@
 import React from "react";
+import Button from "./Button";
 
 const Footer = () => {
   return (
     <div className="container mx-auto pb-16 md:mt-48 md:pb-32  px-5 lg:px-20">
-      <div className="border-b-4 border-sky-600 dark:border-sky-200 my-16 "></div>
+      <div className="border-b-4 border-indigo-600  my-16 "></div>
       <h2 className="text-4xl md:text-7xl xl:text-8xl font-semibold text-center md:text-left  dark:text-white  ">
         made by antonio obradovic
       </h2>
 
       <div className="flex flex-col md:flex-row items-center md:items-start space-y-5 md:space-y-0 md:space-x-6 mt-12">
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://twitter.com/antonioobra8"
-          className="text-white dark:text-black bg-sky-600 dark:bg-sky-200 py-5 px-7 font-bold border-4 border-sky-600 dark:border-sky-200 text-center hover:bg-transparent hover:text-sky-600 dark:hover:text-sky-200 duration-150 w-full md:w-fit"
-        >
-          follow me on twitter
-        </a>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://github.com/AntonioObra"
-          className="text-white bg-sky-700 py-5 px-7 font-bold border-4 border-sky-700 text-center hover:bg-transparent hover:text-sky-700 duration-150 w-full md:w-fit"
-        >
-          checkout my github
-        </a>
+        <Button
+          text="follow me on twitter"
+          link="https://twitter.com/antonioobra8"
+          variant="light"
+        />
+        <Button
+          text="checkout my github"
+          link="https://github.com/AntonioObra"
+          variant="dark"
+        />
       </div>
     </div>
   );

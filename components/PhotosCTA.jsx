@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Button from "./Button";
 
 const PhotosCTA = () => {
   return (
@@ -9,7 +10,7 @@ const PhotosCTA = () => {
         photography<br></br> shots
       </h2>
 
-      <div className="border-b-4 border-sky-600 dark:border-sky-200 my-16 "></div>
+      <div className="border-b-4 border-indigo-600 my-16 "></div>
 
       <div className="flex flex-col lg:flex-row items-top justify-between">
         <div className="relative flex flex-col space-y-5 lg:space-y-0 lg:flex-row lg:w-2/3 ">
@@ -34,12 +35,7 @@ const PhotosCTA = () => {
             with it
           </h4>
 
-          <Link
-            href="/photos"
-            className="text-white dark:text-black bg-sky-600 dark:bg-sky-200 py-5 px-7 font-bold border-4 border-sky-600 dark:border-sky-200 text-center hover:bg-transparent hover:text-sky-600 dark:hover:text-sky-200 duration-150 w-full md:w-fit"
-          >
-            view my gallery
-          </Link>
+          <Button link="/photos" text="view my gallery" variant="dark" />
         </div>
       </div>
     </div>

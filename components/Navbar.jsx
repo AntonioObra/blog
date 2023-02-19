@@ -30,11 +30,11 @@ const Navbar = ({ setDarkMode, isDark }) => {
 
         {isDark ? (
           <button onClick={() => setDarkMode(false)}>
-            <CgSun className="hover:text-indigo-400 duration-150 hover:-translate-y-1 text-2xl hidden md:block" />
+            <CgSun className="hover:text-indigo-400 duration-150 hover:-translate-y-1 text-2xl hidden md:block outline-none" />
           </button>
         ) : (
           <button onClick={() => setDarkMode(true)}>
-            <FiMoon className="hover:text-indigo-400 duration-150 hover:-translate-y-1 text-2xl hidden md:block" />
+            <FiMoon className="hover:text-indigo-400 duration-150 hover:-translate-y-1 text-2xl hidden md:block outline-none" />
           </button>
         )}
 

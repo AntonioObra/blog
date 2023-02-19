@@ -11,7 +11,7 @@
 //test
 
 body {
-  @apply bg-[#ECE7E5] dark:bg-[#2D2D2D] scrollbar-thin scrollbar-thumb-indigo-600 scrollbar-track-indigo-300 overflow-y-scroll;
+  @apply bg-[#ECE7E5] dark:bg-[#2D2D2D] scrollbar-thin scrollbar-thumb-indigo-400 scrollbar-track-indigo-300 overflow-y-scroll;
 }
 
 ::selection {
@@ -28,7 +28,7 @@ body {
 //     brightness(101%) contrast(96%);
 // }
 .outline-title {
-  -webkit-text-stroke: 2px #4f46e5;
+  -webkit-text-stroke: 2px #818cf8;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;

@@ -6,7 +6,7 @@ const Button = ({ text, link, variant }) => {
     return (
       <Link
         href={link}
-        className={`text-white  bg-blue-600  py-5 px-7 font-bold border-4 border-blue-600   text-center hover:bg-transparent hover:text-blue-600  duration-150 w-full md:w-fit`}
+        className={`text-white  bg-indigo-600  py-5 px-7 font-bold border-4 border-indigo-600   text-center hover:bg-transparent hover:text-indigo-600  duration-150 w-full md:w-fit`}
       >
         {text}
       </Link>
@@ -15,7 +15,7 @@ const Button = ({ text, link, variant }) => {
     return (
       <Link
         href={link}
-        className={`text-white  bg-indigo-600  py-5 px-7 font-bold border-4 border-indigo-600   text-center hover:bg-transparent hover:text-indigo-600  duration-150 w-full md:w-fit`}
+        className={`text-white  bg-indigo-400  py-5 px-7 font-bold border-4 border-indigo-400   text-center hover:bg-transparent hover:text-indigo-400  duration-150 w-full md:w-fit`}
       >
         {text}
       </Link>

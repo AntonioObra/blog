@@ -4,7 +4,7 @@ import React from "react";
 
 const PostCard2 = ({ post }) => {
   return (
-    <div className="w-full flex flex-col items-center space-y-5 md:w-[30%] h-96 md:h-[500px]  mb-24 p-5 pt-20 cursor-pointer group border-4 border-transparent duration-50  hover:border-indigo-600 hover:bg-transparent ">
+    <div className="w-full flex flex-col items-center space-y-5 md:w-[30%] h-96 md:h-[500px]  mb-24 p-5 pt-20 cursor-pointer group border-4 border-transparent duration-50  hover:border-indigo-400 hover:bg-transparent ">
       <Link href={`/posts/${post.slug}`}>
         {/* <img
         src={post.featuredImage.url}

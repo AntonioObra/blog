@@ -18,43 +18,13 @@ const Navbar = () => {
       {navLinks.map((link, i) => (
         <Link
           href={link.link}
-          className="hover:text-indigo-600 dark:hover:text-sky-100 duration-150 hover:-translate-y-1 text-lg hidden md:block"
+          className="hover:text-indigo-400 duration-150 hover:-translate-y-1 text-lg hidden md:block"
           key={i}
         >
           {link.name}
         </Link>
       ))}
-      {/* <Link
-        href="/"
-        className="hover:text-sky-600 dark:hover:text-sky-100 -ml-1 duration-150 hover:-translate-y-1 text-lg"
-      >
-        blog.obradovic
-      </Link>
-      <Link
-        href="/posts"
-        className="hover:text-sky-600 dark:hover:text-sky-100 duration-150 hover:-translate-y-1 text-lg hidden md:block"
-      >
-        posts
-      </Link>
-      <Link
-        href="/photos"
-        className="hover:text-sky-600 dark:hover:text-sky-100 duration-150 hover:-translate-y-1 text-lg hidden md:block"
-      >
-        photos
-      </Link>
-      <Link
-        href="/about"
-        className="hover:text-sky-600 dark:hover:text-sky-100 duration-150 hover:-translate-y-1 text-lg hidden md:block"
-      >
-        about
-      </Link>
-      <Link
-        href="/contact"
-        className="hover:text-sky-600 dark:hover:text-sky-100 duration-150 hover:-translate-y-1 text-lg hidden md:block"
-      >
-        contact
-      </Link>{" "}
-      */}
+
       <button
         id="menu-btn"
         className="z-30 block md:hidden focus:outline-none hamburger"

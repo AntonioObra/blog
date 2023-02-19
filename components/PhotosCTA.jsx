@@ -10,7 +10,7 @@ const PhotosCTA = () => {
         photography<br></br> shots
       </h2>
 
-      <div className="border-b-4 border-indigo-600 my-16 "></div>
+      <div className="border-b-4 border-indigo-400 my-16 "></div>
 
       <div className="flex flex-col lg:flex-row items-top justify-between">
         <div className="relative flex flex-col space-y-5 lg:space-y-0 lg:flex-row lg:w-2/3 ">

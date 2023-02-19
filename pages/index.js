@@ -42,12 +42,12 @@ export default function Home({ posts, featuredPosts }) {
           <h1 className="text-6xl md:text-8xl xl:text-9xl font-semibold text-left z-20 dark:text-white ">
             blog. <br></br> obradovic
           </h1>
-          <div className="border-b-4 border-indigo-600 my-5"></div>
+          <div className="border-b-4 border-indigo-400 my-5"></div>
           <p className="text-xl dark:text-white">
             byte of the internet for my thoughts regarding my web development
             journey, reading and videogames
           </p>
-          <div className="border-b-4 border-indigo-600 my-5 mb-7"></div>
+          <div className="border-b-4 border-indigo-400 my-5 mb-7"></div>
           <div className="flex flex-col space-x-0 space-y-5 items-start md:space-x-6 md:flex-row md:space-y-0">
             <Button
               text="follow me on twitter"
@@ -77,7 +77,7 @@ export default function Home({ posts, featuredPosts }) {
 
       {/* Intersection */}
       <div className=" container mx-auto mt-32 px-5 lg:px-20 ">
-        <div className="border-b-4 border-indigo-600 my-10"></div>
+        <div className="border-b-4 border-indigo-400 my-10"></div>
         <h2 className="text-5xl text-left md:text-7xl xl:text-8xl font-bold   outline-title text-transparent">
           <Typewriter
             options={{
@@ -92,7 +92,7 @@ export default function Home({ posts, featuredPosts }) {
             }}
           />
         </h2>
-        <div className="border-b-4 border-indigo-600 my-10"></div>
+        <div className="border-b-4 border-indigo-400 my-10"></div>
       </div>
 
       {/* Editor Picks */}

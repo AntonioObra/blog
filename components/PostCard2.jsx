@@ -11,13 +11,13 @@ const PostCard2 = ({ post }) => {
         alt=""
         className="h-1/2 w-full object-cover grayscale group-hover:grayscale-0 duration-150"
       /> */}
-        <p className="text-gray-800 dark:text-gray-300  text-sm group-hover:text-indigo-700">
+        <p className="text-gray-800 dark:text-gray-300  text-sm group-hover:text-indigo-400">
           {moment(post.createdAt).format("MMM DD, YYYY")}
         </p>
-        <h1 className="dark:text-white text-2xl lg:text-5xl mt-2 line-clamp-3  group-hover:text-indigo-700 ">
+        <h1 className="dark:text-white text-2xl lg:text-5xl mt-2 line-clamp-3  group-hover:text-indigo-400 ">
           {post.title}
         </h1>
-        <p className="text-gray-800 dark:text-gray-300 line-clamp-6 mt-2 group-hover:text-indigo-700">
+        <p className="text-gray-800 dark:text-gray-300 line-clamp-6 mt-2 group-hover:text-indigo-400">
           {post.excerpt}
         </p>
       </Link>

@@ -5,9 +5,7 @@ import Navbar from "../components/Navbar";
 export default function Photos() {
   return (
     <div className="min-h-screen dark:bg-[#0a0a0a]">
-      <Navbar />
-
-      <section className="container px-5 lg:px-20 mt-32 mx-auto  ">
+      <section className="container px-5 lg:px-20 pt-32 mx-auto  ">
         <h1 className="text-6xl md:text-8xl xl:text-9xl font-semibold text-right  dark:text-white md:h-46">
           photos <br></br> galery
         </h1>

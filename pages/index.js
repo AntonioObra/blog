@@ -34,8 +34,6 @@ export default function Home({ posts, featuredPosts }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar />
-
       {/* Header */}
       <header className="container px-5 md:px-0  pt-20 mx-auto flex flex-col space-y-12 justify-evenly items-top lg:flex-row md:space-y-0 ">
         <div className=" mx-auto lg:w-1/2 lg:mx-0">

@@ -22,8 +22,7 @@ export default function PostPage({ posts, categories }) {
 
   return (
     <div className="min-h-screen dark:bg-[#0a0a0a]">
-      <Navbar />
-      <div className="container mx-auto mt-10 md:mt-32 px-5 lg:px-20">
+      <div className="container mx-auto pt-10 md:pt-32 px-5 lg:px-20">
         <h2 className="text-6xl  md:text-7xl xl:text-9xl font-semibold text-left dark:text-white  ">
           all<br></br> posts
         </h2>

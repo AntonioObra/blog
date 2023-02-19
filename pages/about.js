@@ -6,7 +6,6 @@ import Button from "../components/Button";
 export default function About() {
   return (
     <div className="min-h-screen dark:bg-[#0a0a0a]">
-      <Navbar />
       {/* web dev */}
       <section className="container pt-20 mx-auto flex flex-col space-y-12 justify-evenly items-top lg:flex-row md:space-y-0 lg:mb-32 ">
         <div className="w-1/3">

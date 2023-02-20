@@ -33,8 +33,6 @@ const PostDetails = ({ post }) => {
       }
 
       if (obj.href) {
-        console.log(obj);
-        console.log(obj.href);
         modifiedText = (
           <a
             key={index}
@@ -43,9 +41,11 @@ const PostDetails = ({ post }) => {
             target="_blank"
             rel="noreferrer"
           >
-            {" "}
             {obj.children.map((child, i) => (
-              <span key={i} className="text-indigo-400 hover:underline">
+              <span
+                key={i}
+                className="text-indigo-400 hover:underline break-words"
+              >
                 {child.text}
               </span>
             ))}
@@ -147,7 +147,7 @@ const PostDetails = ({ post }) => {
           alt={`Post ${post.title} Image`}
           priority={true}
         />
-        <div className="lg:w-2/3 pt-16 mx-auto ">
+        <div className="w-full px-1 lg:px-0 lg:w-2/3 pt-16 mx-auto ">
           {post.content.raw.children.map((typeObj, index) => {
             const children = typeObj.children.map((item, itemindex) =>
               getContentFragment(itemindex, item.text, item)

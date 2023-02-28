@@ -4,8 +4,6 @@ import { getGoalMoney } from "../services";
 import Footer from "../components/Footer";
 
 export default function Goals({ goalMoney }) {
-  console.log(goalMoney.goals[0].money);
-
   return (
     <div className="min-h-screen dark:bg-[#0a0a0a]">
       <section className="container px-5 lg:px-20 pt-20 mx-auto flex flex-col space-y-12 justify-evenly items-top lg:flex-row md:space-y-0 lg:mb-32 lg:space-x-12 ">

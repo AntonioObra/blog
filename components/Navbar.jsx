@@ -18,32 +18,32 @@ const Navbar = ({ setDarkMode, isDark }) => {
   return (
     <div className="dark:bg-[#0a0a0a] sticky top-0 z-50 bg-[#ECE7E5]">
       <nav className=" container mx-auto py-6 dark:text-white flex justify-between items-start md:justify-start lg:space-x-6 px-5 lg:px-24 ">
-        {/* Mobile Menu Link */}
-        <Link
-          href="/"
-          className="hover:text-indigo-400 duration-150 hover:-translate-y-1 text-lg md:hidden block"
-        >
-          blog.obradovic
-        </Link>
-
         {/* Desktop Menu Links */}
         {navLinks.map((link, i) => (
           <Link
             href={link.link}
-            className="hover:text-indigo-400 duration-150 hover:-translate-y-1 text-lg hidden md:block"
+            className="hover:text-blue-500 duration-150 hover:-translate-y-1 text-lg hidden md:block"
             key={i}
           >
             {link.name}
           </Link>
         ))}
 
+        {/* Mobile Menu Link */}
+        <Link
+          href="/"
+          className="hover:text-blue-500 duration-150 hover:-translate-y-1 text-lg md:hidden block"
+        >
+          blog.obradovic
+        </Link>
+
         {isDark ? (
           <button onClick={() => setDarkMode(false)}>
-            <CgSun className="hover:text-indigo-400 duration-150 hover:-translate-y-1 text-2xl hidden md:block outline-none" />
+            <CgSun className="hover:text-blue-500 duration-150 hover:-translate-y-1 text-2xl hidden md:block outline-none" />
           </button>
         ) : (
           <button onClick={() => setDarkMode(true)}>
-            <FiMoon className="hover:text-indigo-400 duration-150 hover:-translate-y-1 text-2xl hidden md:block outline-none" />
+            <FiMoon className="hover:text-blue-500 duration-150 hover:-translate-y-1 text-2xl hidden md:block outline-none" />
           </button>
         )}
 
@@ -64,13 +64,13 @@ const Navbar = ({ setDarkMode, isDark }) => {
           id="menu"
           className={`fixed inset-0 z-20 ${
             open ? "open" : "hidden"
-          }  flex-col items-center self-end w-full h-full m-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-white uppercase divide-y-4 divide-indigo-400 opacity-90 bg-black `}
+          }  flex-col items-center self-end w-full h-full m-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-white uppercase divide-y-4 divide-blue-500 opacity-90 bg-black `}
         >
           {navLinks.map((link, i) => (
             <div className="w-full py-3 text-center" key={i}>
               <Link
                 href={link.link}
-                className=" hover:text-indigo-400 -ml-1 duration-150 hover:-translate-y-1 text-lg"
+                className=" hover:text-blue-500 -ml-1 duration-150 hover:-translate-y-1 text-lg"
               >
                 {link.name}
               </Link>
@@ -82,14 +82,14 @@ const Navbar = ({ setDarkMode, isDark }) => {
               onClick={() => setDarkMode(false)}
               className="w-full pt-2 flex items-center justify-center outline-none"
             >
-              <CgSun className="hover:text-indigo-400 duration-150 hover:-translate-y-1 text-4xl  md:hidden outline-none " />
+              <CgSun className="hover:text-blue-500 duration-150 hover:-translate-y-1 text-4xl  md:hidden outline-none " />
             </button>
           ) : (
             <button
               onClick={() => setDarkMode(true)}
               className="w-full pt-2 flex items-center justify-center outline-none"
             >
-              <FiMoon className="hover:text-indigo-400 duration-150 hover:-translate-y-1 text-4xl  md:hidden outline-none" />
+              <FiMoon className="hover:text-blue-500 duration-150 hover:-translate-y-1 text-4xl  md:hidden outline-none" />
             </button>
           )}
         </div>

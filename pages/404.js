@@ -9,11 +9,11 @@ const NotFoundPage = () => {
           <h1 className="text-6xl md:text-8xl xl:text-9xl font-semibold text-left z-20 dark:text-white md:h-46">
             404
           </h1>
-          <div className="border-b-4 border-indigo-400 my-5"></div>
+          <div className="border-b-4 border-blue-500 my-5"></div>
           <p className="text-xl dark:text-white text-left ">
             this page doesn&#39;t exist
           </p>
-          <div className="border-b-4 border-indigo-400 my-5 mb-7"></div>
+          <div className="border-b-4 border-blue-500 my-5 mb-7"></div>
           <div className="flex items-end float-right space-x-6">
             <Button text="go back" link="/" variant="dark" />
           </div>

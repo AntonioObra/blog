@@ -9,7 +9,7 @@ export default function Photos() {
         <h1 className="text-6xl md:text-8xl xl:text-9xl font-semibold text-right  dark:text-white md:h-46">
           photos <br></br> galery
         </h1>
-        <div className="border-b-4 border-indigo-400 my-16"></div>
+        <div className="border-b-4 border-blue-500 my-16"></div>
         <div className="grid grid-cols-3 gap-6">
           <Image
             src="/images/IMG_1492.JPG"

@@ -21,9 +21,9 @@ export default function Goals({ goalMoney }) {
           <h1 className="text-6xl md:text-8xl xl:text-9xl font-semibold text-right z-20 dark:text-white md:h-46">
             goal <br></br> for 2027
           </h1>
-          <div className="border-b-4 border-indigo-400 my-5"></div>
+          <div className="border-b-4 border-blue-500 my-5"></div>
           <p className="text-xl dark:text-white text-right ">ferrari 485 v8</p>
-          <div className="border-b-4 border-indigo-400 my-5 mb-7"></div>
+          <div className="border-b-4 border-blue-500 my-5 mb-7"></div>
           <p className="text-xl dark:text-white text-right ">
             {goalMoney.goals[0].money} € / 187.500 €
           </p>

@@ -9,7 +9,7 @@ const LatestPosts = ({ posts }) => {
         recent<br></br> posts
       </h2>
       {/* fix */}
-      <div className="border-b-4 border-indigo-400 my-5 md:my-16 "></div>
+      <div className="border-b-4 border-blue-500 my-5 md:my-16 "></div>
 
       <div className="  lg:max-w-8xl  flex flex-col items-top justify-between space-y-5 md:space-y-0  md:flex-row flex-wrap ">
         {newPosts &&

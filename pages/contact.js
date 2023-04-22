@@ -9,7 +9,7 @@ export default function Contact() {
           <h1 className="text-6xl md:text-8xl xl:text-9xl font-semibold  z-20 dark:text-white md:h-46">
             let&#39;s <br></br>get in touch
           </h1>
-          <div className="border-b-4 border-indigo-400 my-10"></div>
+          <div className="border-b-4 border-blue-500 my-10"></div>
 
           <div className="flex flex-col space-y-5 items-start md:flex-row md:space-y-0 md:space-x-6">
             <Button

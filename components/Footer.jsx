@@ -4,7 +4,7 @@ import Button from "./Button";
 const Footer = () => {
   return (
     <div className="container mx-auto pb-16 md:mt-48 md:pb-32  px-5 lg:px-20">
-      <div className="border-b-4 border-indigo-400  my-16 "></div>
+      <div className="border-b-4 border-blue-500  my-16 "></div>
       <h2 className="text-4xl md:text-7xl xl:text-8xl font-semibold text-center md:text-left  dark:text-white  ">
         made by antonio obradovic
       </h2>

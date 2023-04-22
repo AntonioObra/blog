@@ -44,7 +44,7 @@ const PostDetails = ({ post }) => {
             {obj.children.map((child, i) => (
               <span
                 key={i}
-                className="text-indigo-400 hover:underline break-words"
+                className="text-blue-500 hover:underline break-words"
               >
                 {child.text}
               </span>
@@ -137,7 +137,7 @@ const PostDetails = ({ post }) => {
         <h1 className="text-5xl md:text-6xl xl:text-8xl 2xl:text-9xl font-semibold text-left  dark:text-white ">
           {post.title}
         </h1>
-        <div className="border-b-4 border-indigo-400 py-2 md:py-2"></div>
+        <div className="border-b-4 border-blue-500 py-2 md:py-2"></div>
         {/* <Image width={500} height={500} src={post?.featuredImage.url} /> */}
         <Image
           width={2500}

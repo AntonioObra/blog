@@ -22,7 +22,7 @@ export default function About() {
           <h1 className="text-6xl md:text-8xl xl:text-9xl font-semibold text-right z-20 dark:text-white md:h-46">
             web <br></br> developer
           </h1>
-          <div className="border-b-4 border-indigo-400 my-5"></div>
+          <div className="border-b-4 border-blue-500 my-5"></div>
           <p className="text-xl dark:text-white text-right ">
             my web dev journey started in 2020 when I was reintroduced to the
             wonders of html and css and have gotten hooked immediately, since
@@ -31,7 +31,7 @@ export default function About() {
             express, mongo and firebase...<br></br> and went to land my first
             job 6 months after graduationg from highschool
           </p>
-          <div className="border-b-4 border-indigo-400 my-5 mb-7"></div>
+          <div className="border-b-4 border-blue-500 my-5 mb-7"></div>
           <div className="flex items-end float-right space-x-6">
             <Button
               text="checkout my github"
@@ -48,7 +48,7 @@ export default function About() {
           <h1 className="text-6xl md:text-8xl xl:text-9xl font-semibold text-left z-20 dark:text-white md:h-46">
             book <br></br> worm
           </h1>
-          <div className="border-b-4 border-indigo-400 my-5"></div>
+          <div className="border-b-4 border-blue-500 my-5"></div>
           <p className="text-xl dark:text-white text-left ">
             ever since getting reccomended the books &#39;rich dad, poor
             dad&#39; and &#39;think and grow rich&#39;, i&#39;ve gotten big into
@@ -56,7 +56,7 @@ export default function About() {
             can read about the struggles of a roman emperor to getting sucked
             into the world of witcher is something else
           </p>
-          <div className="border-b-4 border-indigo-400 my-5 mb-7"></div>
+          <div className="border-b-4 border-blue-500 my-5 mb-7"></div>
           <div className="flex items-start space-x-6">
             <Button
               text="my notion bookshelf"
@@ -92,7 +92,7 @@ export default function About() {
           <h1 className="text-6xl md:text-8xl xl:text-9xl font-semibold text-right z-20 dark:text-white md:h-46">
             hardstuck <br></br> silver
           </h1>
-          <div className="border-b-4 border-indigo-400 my-5"></div>
+          <div className="border-b-4 border-blue-500 my-5"></div>
           <p className="text-xl dark:text-white text-right ">
             suprise, suprise, another league of legends addict... <br></br>
             although my addiction for league of legends and toxicity of botlane
@@ -100,7 +100,7 @@ export default function About() {
             something gould came out of it, as i made a mobafire clone as my
             highschool finals project and planning to remake it using t3-stack.
           </p>
-          <div className="border-b-4 border-indigo-400 my-5 mb-7"></div>
+          <div className="border-b-4 border-blue-500 my-5 mb-7"></div>
           <div className="flex items-end float-right space-x-6">
             <Button
               text="waste of time"

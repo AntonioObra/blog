@@ -28,14 +28,14 @@ export default function PostPage({ posts, categories }) {
         </h2>
         <div className="flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-5 mt-10">
           <h5
-            className="dark:text-white cursor-pointer hover:text-indigo-400 lg:text-xl hover:underline"
+            className="dark:text-white cursor-pointer hover:text-blue-500 lg:text-xl hover:underline"
             onClick={() => handleTagFilter("All")}
           >
             All
           </h5>
           {categories.map((category, index) => (
             <h5
-              className="dark:text-white cursor-pointer lg:text-xl hover:text-indigo-400 hover:underline"
+              className="dark:text-white cursor-pointer lg:text-xl hover:text-blue-500 hover:underline"
               onClick={() => handleTagFilter(category.name)}
               key={index}
             >
@@ -44,7 +44,7 @@ export default function PostPage({ posts, categories }) {
           ))}
         </div>
 
-        <div className="border-b-4 border-indigo-400 my-5 md:my-10 "></div>
+        <div className="border-b-4 border-blue-500 my-5 md:my-10 "></div>
 
         <div className="lg:max-w-8xl flex flex-col items-top justify-between space-y-5 md:space-y-0 md:flex-row flex-wrap ">
           {posts &&

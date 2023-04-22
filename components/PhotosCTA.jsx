@@ -30,10 +30,10 @@ const PhotosCTA = () => {
           />
         </div>
         <div className="flex flex-col items-center lg:items-end space-y-16 lg:w-1/3">
-          <h4 className="text-2xl text-center lg:text-3xl dark:text-white lg:text-right">
+          <h3 className="text-2xl text-center lg:text-3xl dark:text-white lg:text-right">
             one of my passions is photography and the beauty you can capture
             with it
-          </h4>
+          </h3>
 
           <Button link="/photos" text="view my gallery" variant="dark" />
         </div>

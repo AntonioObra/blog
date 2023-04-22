@@ -38,11 +38,11 @@ const Navbar = ({ setDarkMode, isDark }) => {
         </Link>
 
         {isDark ? (
-          <button onClick={() => setDarkMode(false)}>
+          <button onClick={() => setDarkMode(false)} title="Toggle light mode">
             <CgSun className="hover:text-blue-500 duration-150 hover:-translate-y-1 text-2xl hidden md:block outline-none" />
           </button>
         ) : (
-          <button onClick={() => setDarkMode(true)}>
+          <button onClick={() => setDarkMode(true)} title="Toggle dark mode">
             <FiMoon className="hover:text-blue-500 duration-150 hover:-translate-y-1 text-2xl hidden md:block outline-none" />
           </button>
         )}

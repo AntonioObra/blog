@@ -121,7 +121,7 @@ export default async function SinglePostPage({ params }: PageProps) {
 
         <div className="overflow-hidden rounded-xl my-16 shadow-2xl shadow-primary border-2 border-primary">
           <Image
-            src={`/images/Posts/${post.image}`}
+            src={`/images/posts/${post.image}`}
             alt={post.title}
             width={1920}
             height={919}

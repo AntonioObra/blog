@@ -15,7 +15,7 @@ const PortalMaterial = shaderMaterial(
   {
     uTime: 0,
     uColorStart: new THREE.Color("#2563eb"),
-    uColorEnd: new THREE.Color("#ffffff"),
+    uColorEnd: new THREE.Color("#050505"),
   },
   portalVertexShader,
   portalFragmentShader
@@ -26,20 +26,20 @@ extend({ PortalMaterial });
 const HeroSection = () => {
   const portalMaterialRef = useRef();
   const { viewport, size } = useThree();
-  // const { resolvedTheme } = useTheme();
+  const { resolvedTheme } = useTheme();
 
   useFrame((state, delta) => {
     portalMaterialRef.current.uTime += delta * 2.5;
   });
 
-  // useEffect(() => {
-  //   let isDark = resolvedTheme === "dark";
-  //   portalMaterialRef.current.uniforms.uColorEnd.value.set(
-  //     isDark ? "#050505" : "#ffffff"
-  //   );
-  // }, [resolvedTheme]);
+  useEffect(() => {
+    let isDark = resolvedTheme === "dark";
+    portalMaterialRef.current.uniforms.uColorEnd.value.set(
+      isDark ? "#050505" : "#ffffff"
+    );
+  }, [resolvedTheme]);
 
-  // if (!portalMaterialRef) return null;
+  if (!portalMaterialRef) return null;
 
   return (
     <>

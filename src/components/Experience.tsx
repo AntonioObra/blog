@@ -26,7 +26,7 @@ const Experience = () => {
       whileInView="visible"
       viewport={{ once: true, amount: 0.25 }}
     >
-      <section className="-mt-20 h-[100vh] w-full relative">
+      <section className="h-[100vh] w-full relative">
         <Canvas>
           <HeroSection />
         </Canvas>

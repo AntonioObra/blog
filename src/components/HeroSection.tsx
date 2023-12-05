@@ -26,19 +26,20 @@ extend({ PortalMaterial });
 const HeroSection = () => {
   const portalMaterialRef = useRef();
   const { viewport, size } = useThree();
-  const { theme, systemTheme } = useTheme();
+  const { resolvedTheme } = useTheme();
 
   useFrame((state, delta) => {
     portalMaterialRef.current.uTime += delta * 2.5;
   });
 
   useEffect(() => {
-    let isDark =
-      theme === "dark" || (theme === "system" && systemTheme === "dark");
+    let isDark = resolvedTheme === "dark";
     portalMaterialRef.current.uniforms.uColorEnd.value.set(
       isDark ? "#050505" : "#ffffff"
     );
-  }, [portalMaterialRef, theme, systemTheme]);
+  }, [resolvedTheme]);
+
+  if (!portalMaterialRef) return null;
 
   return (
     <>

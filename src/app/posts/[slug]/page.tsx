@@ -13,7 +13,6 @@ import PostCard from "@/components/PostCard";
 import { buttonVariants } from "@/components/ui/button";
 import { Mdx } from "@/components/Mdx";
 import { DocsPageHeader } from "@/components/PageHeader";
-import { useTheme } from "next-themes";
 
 interface PageProps {
   params: {

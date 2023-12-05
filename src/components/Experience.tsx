@@ -2,6 +2,7 @@
 "use client";
 
 import HeroSection from "@/components/HeroSection";
+import HeroSectionDark from "@/components/HeroSectionDark";
 import { Icons } from "@/components/Icons";
 import { MotionDiv } from "@/components/MotionDiv";
 import { buttonVariants } from "@/components/ui/button";
@@ -27,9 +28,19 @@ const Experience = () => {
       viewport={{ once: true, amount: 0.25 }}
     >
       <section className="-mt-20 h-[100vh] w-full relative">
-        <Canvas>
-          <HeroSection />
-        </Canvas>
+        {/* Light mode */}
+        <div className="h-[100vh] dark:hidden">
+          <Canvas>
+            <HeroSection />
+          </Canvas>
+        </div>
+
+        {/* Dark mode */}
+        <div className="h-[100vh] hidden dark:block">
+          <Canvas>
+            <HeroSectionDark />
+          </Canvas>
+        </div>
 
         <div className="absolute inset-0 pt-20 dark:backdrop-brightness-75 backdrop-blur-lg flex items-center justify-center">
           <div className="container">

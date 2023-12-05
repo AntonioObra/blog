@@ -34,7 +34,6 @@ const HeroSection = () => {
 
   useEffect(() => {
     let isDark = resolvedTheme === "dark";
-    console.log(isDark);
     portalMaterialRef.current.uniforms.uColorEnd.value.set(
       isDark ? "#050505" : "#ffffff"
     );

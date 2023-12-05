@@ -89,7 +89,7 @@ export default function RootLayout({
         className={cn(
           poppins.className,
           fontHeading.variable,
-          "min-h-screen bg-background font-sans antialiased"
+          "min-h-screen bg-background antialiased"
         )}
       >
         {/* // * ThemeProvider used for no flashing white screen on dark mode */}

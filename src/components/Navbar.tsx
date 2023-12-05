@@ -118,12 +118,12 @@ const Navbar = () => {
             </Link>
           ))}
           <Link
-            href="https://blog.obradovic.dev"
+            href="https://obradovic.dev"
             className={buttonVariants({ variant: "default", size: "lg" })}
             target="_blank"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            blog
+            portfolio
           </Link>
         </div>
 

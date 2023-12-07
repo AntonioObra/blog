@@ -27,6 +27,20 @@ const Experience = () => {
       viewport={{ once: true, amount: 0.25 }}
     >
       <section className="h-[100vh] w-full relative">
+        <MotionDiv
+        variants={variants}
+        initial="hidden"
+        transition={{ delay: 0.5, ease: "easeInOut", duration: 1.2 }}
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.25 }}
+        >
+          <Canvas>
+            {/* @ts-ignore */}
+            {/* <HeroSection /> */}
+            <Preload all />
+          </Canvas>
+        </MotionDiv>
+
         <div className="absolute inset-0 pt-20 dark:backdrop-brightness-75 backdrop-blur-lg flex items-center justify-center">
           <div className="container">
             <hgroup className="border-b-2 border-muted-foreground/50 pb-4">
@@ -66,14 +80,6 @@ const Experience = () => {
               </Link>
             </div>
           </div>
-        </div>
-
-        <div className="-z-[1] relative">
-          <Canvas>
-            {/* @ts-ignore */}
-            {/* <HeroSection /> */}
-            <Preload all />
-          </Canvas>
         </div>
       </section>
     </MotionDiv>

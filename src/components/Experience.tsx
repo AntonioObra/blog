@@ -19,11 +19,17 @@ const variants = {
 
 const Experience = () => {
   return (
-
+    <MotionDiv
+      variants={variants}
+      initial="hidden"
+      transition={{ delay: 0.2, ease: "easeInOut", duration: 1.2 }}
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.25 }}
+    >
       <section className="h-[100vh] w-full relative">
         <Canvas>
           {/* @ts-ignore */}
-          {/* <HeroSection /> */}
+          <HeroSection /> 
           <Preload all />
         </Canvas>
 
@@ -68,6 +74,7 @@ const Experience = () => {
           </div>
         </div>
       </section>
+    </MotionDiv>
   );
 };
 

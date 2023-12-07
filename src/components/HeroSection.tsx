@@ -33,11 +33,12 @@ const HeroSection = () => {
   });
 
   useEffect(() => {
-    let isDark = resolvedTheme === "dark";
-
-    if (!isDark) {
+    if (resolvedTheme === "dark") {
+      portalMaterialRef.current.uniforms.uColorEnd.value.set("#050505");
+    } else {
       portalMaterialRef.current.uniforms.uColorEnd.value.set("#ffffff");
     }
+
   }, [resolvedTheme]);
 
   if (!portalMaterialRef) return null;

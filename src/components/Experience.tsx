@@ -27,9 +27,9 @@ const Experience = () => {
       viewport={{ once: true, amount: 0.25 }}
     >
       <section className="h-[100vh] w-full relative">
-        <Canvas>
+        {/* <Canvas>
           <HeroSection />
-        </Canvas>
+  </Canvas> */}
 
         <div className="absolute inset-0 pt-20 dark:backdrop-brightness-75 backdrop-blur-lg flex items-center justify-center">
           <div className="container">

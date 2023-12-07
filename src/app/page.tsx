@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="-mt-20">
       {/* Shader Hero  */}
-      {/* <Experience /> */}
+      <Experience />
 
       {/* Latest Posts */}
       <section className="container my-20">

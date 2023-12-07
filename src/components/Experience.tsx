@@ -68,11 +68,13 @@ const Experience = () => {
           </div>
         </div>
 
-        <Canvas>
-          {/* @ts-ignore */}
-          {/* <HeroSection /> */}
-          <Preload all />
-        </Canvas>
+        <div className="-z-[1] relative">
+          <Canvas>
+            {/* @ts-ignore */}
+            {/* <HeroSection /> */}
+            <Preload all />
+          </Canvas>
+        </div>
       </section>
     </MotionDiv>
   );

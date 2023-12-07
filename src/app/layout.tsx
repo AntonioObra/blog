@@ -93,7 +93,7 @@ export default function RootLayout({
         )}
       >
         {/* // * ThemeProvider used for no flashing white screen on dark mode */}
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="dark">
           <Navbar />
           {children}
           <Footer />

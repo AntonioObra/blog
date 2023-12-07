@@ -1,4 +1,3 @@
-// @ts-nocheck
 "use client";
 
 import HeroSection from "@/components/HeroSection";
@@ -6,6 +5,7 @@ import { Icons } from "@/components/Icons";
 import { MotionDiv } from "@/components/MotionDiv";
 import { buttonVariants } from "@/components/ui/button";
 import { Canvas } from "@react-three/fiber";
+import { Preload } from '@react-three/drei'
 import Link from "next/link";
 
 const variants = {
@@ -27,10 +27,6 @@ const Experience = () => {
       viewport={{ once: true, amount: 0.25 }}
     >
       <section className="h-[100vh] w-full relative">
-        <Canvas>
-          {/* <HeroSection /> */}
-        </Canvas>
-
         <div className="absolute inset-0 pt-20 dark:backdrop-brightness-75 backdrop-blur-lg flex items-center justify-center">
           <div className="container">
             <hgroup className="border-b-2 border-muted-foreground/50 pb-4">
@@ -71,6 +67,12 @@ const Experience = () => {
             </div>
           </div>
         </div>
+
+        <Canvas>
+          {/* @ts-ignore */}
+          {/* <HeroSection /> */}
+          <Preload all />
+        </Canvas>
       </section>
     </MotionDiv>
   );

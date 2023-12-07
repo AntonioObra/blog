@@ -83,8 +83,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <head suppressHydrationWarning />
+    <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
           poppins.className,
@@ -93,7 +92,7 @@ export default function RootLayout({
         )}
       >
         {/* // * ThemeProvider used for no flashing white screen on dark mode */}
-        <ThemeProvider attribute="class" defaultTheme="dark">
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar />
           {children}
           <Footer />

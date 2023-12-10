@@ -7,12 +7,12 @@ import { env } from "process";
 
 import { allBlogs } from "contentlayer/generated";
 
+import { Mdx } from "@/components/Mdx";
 import ViewAll from "@/components/ViewAll";
 import { Icons } from "@/components/Icons";
 import PostCard from "@/components/PostCard";
+import { PageSection } from "@/components/PageHeader";
 import { buttonVariants } from "@/components/ui/button";
-import { Mdx } from "@/components/Mdx";
-import { DocsPageHeader } from "@/components/PageHeader";
 
 interface PageProps {
   params: {
@@ -73,6 +73,22 @@ export async function generateMetadata({
   };
 }
 
+const BackToPosts = () => {
+  return (
+    <div className="flex flex-col md:flex-row items-center gap-4 mb-12">
+      <Link
+        href="/posts"
+        className={buttonVariants({ variant: "link" })}
+      >
+        <Icons.arrowLeft className="mr-2 w-4 h-4" />
+        Back to Posts
+      </Link>
+
+      <div className="bg-secondary w-full h-[2px] "></div>
+    </div>
+  )
+}
+
 export default async function SinglePostPage({ params }: PageProps) {
   const { slug } = params;
 
@@ -82,90 +98,45 @@ export default async function SinglePostPage({ params }: PageProps) {
   return (
     <main className="py-16 md:py-24 lg:py-32">
       <section className="container mb-20">
-        <div className="flex items-center gap-4 mb-12">
-          <Link href="/posts" className={buttonVariants({ variant: "link" })}>
-            <Icons.arrowLeft className="mr-2 w-4 h-4" />
-            Back to Posts
-          </Link>
-          <div className="bg-secondary w-full h-[1px] "></div>
-          {post.github && (
-            <Link
-              href={post.github}
-              target="_blank"
-              className={buttonVariants({ variant: "secondary" })}
-            >
-              <Icons.github className="mr-2 w-4 h-4" />
-              View on GitHub
-            </Link>
-          )}
+        <BackToPosts />
 
-          {post.url && (
-            <Link
-              href={post?.url}
-              target="_blank"
-              className={buttonVariants({ variant: "default" })}
-            >
-              <Icons.externalLink className="mr-2 w-4 h-4" />
-              Preview post
-            </Link>
-          )}
-        </div>
+        <PageSection
+          heading={post.title}
+          text={post.description}
+          border={false}
+          className="mb-12"
+          orientation="left"
+        />
 
-        <hgroup>
-          <h1 className="text-7xl font-heading ">{post.title}</h1>
-          <p className="text-xl mt-4 text-muted-foreground">
-            {post.description}
-          </p>
-        </hgroup>
-
-        <div className="overflow-hidden rounded-xl my-16 shadow-2xl shadow-primary border-2 border-primary">
+        <div className="overflow-hidden rounded-xl my-16 shadow-xl md:shadow-2xl shadow-primary/50 md:shadow-primary border-2 border-primary">
           <Image
             src={`/images/posts/${post.image}`}
             alt={post.title}
             width={1920}
             height={919}
             priority
+            className="object-cover w-full min-h-[400px]"
           />
         </div>
 
         <div className="mb-16 pt-10 max-w-3xl mx-auto">
-          <DocsPageHeader heading="About the post" />
           <Mdx code={post.body.code} />
         </div>
 
-        <div className="flex items-center gap-4">
-          <Link href="/posts" className={buttonVariants({ variant: "link" })}>
-            <Icons.arrowLeft className="mr-2 w-4 h-4" />
-            Back to Posts
-          </Link>
-          <div className="bg-secondary w-full h-[1px] "></div>
-          {post.github && (
-            <Link
-              href={post.github}
-              target="_blank"
-              className={buttonVariants({ variant: "secondary" })}
-            >
-              <Icons.github className="mr-2 w-4 h-4" />
-              View on GitHub
-            </Link>
-          )}
-          {post.url && (
-            <Link
-              href={post?.url}
-              target="_blank"
-              className={buttonVariants({ variant: "default" })}
-            >
-              <Icons.externalLink className="mr-2 w-4 h-4" />
-              Preview post
-            </Link>
-          )}
-        </div>
+        <BackToPosts />
+
       </section>
 
-      {/* Other Posts */}
+      {/* Other posts */}
       {otherPosts.length > 0 && (
         <section className="container">
-          <h1 className="text-3xl">Other Posts</h1>
+          <PageSection
+            heading="Other posts"
+            text="A list of my other posts"
+            border={false}
+            className="mb-12"
+            orientation="left"
+          />
 
           <div className="grid grid-cols-1 md:grid-cols-2 mt-12 gap-8">
             {otherPosts.slice(0, 2).map((post) => (
@@ -174,13 +145,12 @@ export default async function SinglePostPage({ params }: PageProps) {
                 title={post.title}
                 image={post.image}
                 tag={post.tag}
-                description={post.description}
                 slug={post.slugAsParams}
               />
             ))}
           </div>
 
-          <ViewAll text="View All Posts" url="/Posts" />
+          <ViewAll text="View All Posts" url="/posts" />
         </section>
       )}
     </main>

@@ -1,12 +1,14 @@
 "use client";
 
-import HeroSection from "@/components/HeroSection";
+import Link from "next/link";
+
+import { Preload } from '@react-three/drei'
+import { Canvas } from "@react-three/fiber";
+
 import { Icons } from "@/components/Icons";
+import HeroSection from "@/components/HeroSection";
 import { MotionDiv } from "@/components/MotionDiv";
 import { buttonVariants } from "@/components/ui/button";
-import { Canvas } from "@react-three/fiber";
-import { Preload } from '@react-three/drei'
-import Link from "next/link";
 
 const variants = {
   hidden: {
@@ -29,7 +31,7 @@ const Experience = () => {
       <section className="h-[100vh] w-full relative">
         <Canvas>
           {/* @ts-ignore */}
-          <HeroSection /> 
+          <HeroSection />
           <Preload all />
         </Canvas>
 

@@ -21,7 +21,7 @@ const ViewAll = ({ text, url }: ViewAllProps) => {
       >
         {text} <Icons.arrowRight className="ml-4 h-4 w-4" />
       </Link>
-      <div className="bg-secondary w-full h-[1px]  peer-hover:bg-primary transition-all duration-300"></div>
+      <div className="bg-secondary w-full h-[2px]  peer-hover:bg-primary transition-all duration-300"></div>
     </div>
   );
 };

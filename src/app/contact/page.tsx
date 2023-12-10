@@ -3,7 +3,7 @@ import { Metadata } from "next";
 
 import { Icons } from "@/components/Icons";
 import { MotionDiv } from "@/components/MotionDiv";
-import { DocsPageHeader } from "@/components/PageHeader";
+import { PageHeader } from "@/components/PageHeader";
 import { buttonVariants } from "@/components/ui/button";
 
 import { cn } from "@/lib/utils";
@@ -19,10 +19,10 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function ContactPage() {
   return (
-    <main className="container py-16 md:py-24 lg:py-32">
-      <DocsPageHeader
+    <main className="container py-16 md:py-20">
+      <PageHeader
         heading="Contact me"
-        text=" If you have any questions, inquiries, or would like to discuss a potential project or collaboration, please feel free to get in touch with me. I'm always excited to connect with fellow professionals and enthusiasts in the industry."
+        text="My contact information"
       />
 
       <div className="grid grid-cols-2 gap-5 mt-10 flex-col md:flex-row flex-wrap">
@@ -33,7 +33,7 @@ export default function ContactPage() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.25 }}
         >
-          <div className="flex flex-col justify-between  border-2 border-muted bg-secondary dark:bg-background-muted rounded-lg p-8 hover:border-foreground/50 hover:shadow-2xl h-full hover:shadow-foreground/20 transition-all duration-300">
+          <div className="flex flex-col justify-between  border-2 border-muted bg-secondary  rounded-lg p-8 hover:border-foreground/50 hover:shadow-2xl h-full hover:shadow-foreground/20 transition-all duration-300">
             <div>
               <h2 className="text-2xl font-bold mb-4">Email</h2>
               <p className="text-lg text-muted-foreground">
@@ -66,7 +66,7 @@ export default function ContactPage() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.25 }}
         >
-          <div className="flex flex-col justify-between  border-2 border-muted bg-secondary dark:bg-background-muted rounded-lg p-8 hover:border-foreground/50 hover:shadow-2xl h-full hover:shadow-foreground/20 transition-all duration-300">
+          <div className="flex flex-col justify-between  border-2 border-muted bg-secondary  rounded-lg p-8 hover:border-foreground/50 hover:shadow-2xl h-full hover:shadow-foreground/20 transition-all duration-300">
             <div>
               <h2 className="text-2xl font-bold mb-4">Socials</h2>
               <p className="text-lg text-muted-foreground">

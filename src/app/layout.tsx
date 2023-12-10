@@ -4,25 +4,26 @@ import { Poppins } from "next/font/google";
 
 import "./globals.css";
 
+import { cn } from "@/lib/utils";
 import { siteConfig } from "@/config/site";
 
-import { cn } from "@/lib/utils";
-import { ThemeProvider } from "@/components/ThemeProvider";
-import { Analytics } from "@/components/Analytics";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Analytics } from "@/components/Analytics";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
+// * Fonts
 const poppins = Poppins({
   subsets: ["latin", "latin-ext"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-sans",
 });
-
 const fontHeading = localFont({
   src: "../assets/fonts/DankMono-Bold.woff2",
   variable: "--font-heading",
 });
 
+// * Metadata
 export const metadata: Metadata = {
   metadataBase: new URL("https://blog.obradovic.dev"),
   title: {
@@ -91,7 +92,6 @@ export default function RootLayout({
           "min-h-screen bg-background antialiased"
         )}
       >
-        {/* // * ThemeProvider used for no flashing white screen on dark mode */}
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar />
           {children}

@@ -1,11 +1,19 @@
+import ViewAll from "@/components/ViewAll";
+import PostCard from "@/components/PostCard";
 import Experience from "@/components/Experience";
 import { PageSection } from "@/components/PageHeader";
-import PostCard from "@/components/PostCard";
-import ViewAll from "@/components/ViewAll";
 
 import { allBlogs } from "contentlayer/generated";
 
+import { formatDate } from "@/lib/utils";
+import { compareDesc } from "date-fns";
+
 export default function Home() {
+  // * Sort posts by date
+  allBlogs.sort((a, b) => {
+    return compareDesc(new Date(a.date), new Date(b.date));
+  });
+
   return (
     <main className="-mt-20">
       {/* Shader Hero  */}
@@ -24,6 +32,7 @@ export default function Home() {
               image={post.image}
               tag={post.tag}
               slug={post.slugAsParams}
+              date={formatDate(post.date)}
             />
           ))}
         </div>

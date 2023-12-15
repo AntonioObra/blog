@@ -7,7 +7,16 @@ import { allBlogs } from "contentlayer/generated";
 import { PageHeader } from "@/components/PageHeader";
 import { buttonVariants } from "@/components/ui/button";
 
+import { formatDate } from "@/lib/utils";
+import { compareDesc } from "date-fns";
+
+
 export default function PostsPage() {
+  // * Sort posts by date
+  allBlogs.sort((a, b) => {
+    return compareDesc(new Date(a.date), new Date(b.date));
+  });
+
   // * Get all unique filters
   const allBlogsFilters = allBlogs.map((post) => post.tag);
   const uniqueFilters = [...new Set(allBlogsFilters)];
@@ -57,6 +66,7 @@ export default function PostsPage() {
             image={post.image}
             tag={post.tag}
             slug={post.slugAsParams}
+            date={formatDate(post.date)}
           />
         ))}
       </div>

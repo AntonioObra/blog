@@ -1,57 +1,54 @@
+// contentlayer.config.js
 import { defineDocumentType, makeSource } from "contentlayer/source-files";
 import rehypePrettyCode from "rehype-pretty-code";
 import remarkGfm from "remark-gfm";
-
-/**@type {import('contentlayer/source-files').ComputedFields} */
-const computedFields = {
+var computedFields = {
   slug: {
     type: "string",
-    resolve: (doc) => `˙/${doc._raw.flattenedPath}`,
+    resolve: (doc) => `\u02D9/${doc._raw.flattenedPath}`
   },
   slugAsParams: {
     type: "string",
-    resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1).join("/"),
-  },
+    resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1).join("/")
+  }
 };
-
-export const Blog = defineDocumentType(() => ({
+var Blog = defineDocumentType(() => ({
   name: "Blog",
   filePathPattern: `blogs/**/*.mdx`,
   contentType: "mdx",
   fields: {
     title: {
       type: "string",
-      required: true,
+      required: true
     },
     description: {
       type: "string",
-      required: true,
+      required: true
     },
     github: {
       type: "string",
-      required: false,
+      required: false
     },
     url: {
       type: "string",
-      required: false,
+      required: false
     },
     tag: {
       type: "string",
-      required: true,
+      required: true
     },
     image: {
       type: "string",
-      required: true,
+      required: true
     },
     date: {
       type: "date",
-      required: true,
-    },
+      required: true
+    }
   },
-  computedFields,
+  computedFields
 }));
-
-export default makeSource({
+var contentlayer_config_default = makeSource({
   contentDirPath: "src/content",
   documentTypes: [Blog],
   mdx: {
@@ -71,9 +68,14 @@ export default makeSource({
           },
           onVisitHighlightedWord(node) {
             node.properties.className.push("line--highlighted");
-          },
-        },
-      ],
-    ],
-  },
+          }
+        }
+      ]
+    ]
+  }
 });
+export {
+  Blog,
+  contentlayer_config_default as default
+};
+//# sourceMappingURL=compiled-contentlayer-config-MJEL5HQ6.mjs.map

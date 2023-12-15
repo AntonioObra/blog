@@ -14,6 +14,8 @@ import PostCard from "@/components/PostCard";
 import { PageSection } from "@/components/PageHeader";
 import { buttonVariants } from "@/components/ui/button";
 
+import { formatDate } from "@/lib/utils";
+
 interface PageProps {
   params: {
     slug: string;
@@ -73,7 +75,7 @@ export async function generateMetadata({
   };
 }
 
-const BackToPosts = () => {
+const BackToPosts = ({ date }: { date: string }) => {
   return (
     <div className="flex flex-col md:flex-row items-center gap-4 mb-12">
       <Link
@@ -85,6 +87,7 @@ const BackToPosts = () => {
       </Link>
 
       <div className="bg-secondary w-full h-[2px] "></div>
+      <p className="flex-shrink-0 text-muted-foreground">{date}</p>
     </div>
   )
 }
@@ -94,11 +97,13 @@ export default async function SinglePostPage({ params }: PageProps) {
 
   const post = await getPostFromParams(slug);
   const otherPosts = allBlogs.filter((post) => post.slugAsParams !== slug);
+  // * Shuffle the array of otherProjects so that the same projects don't show up every time
+  otherPosts.sort(() => Math.random() - 0.5);
 
   return (
     <main className="py-16 md:py-24 lg:py-32">
       <section className="container mb-20">
-        <BackToPosts />
+        <BackToPosts date={formatDate(post.date)} />
 
         <PageSection
           heading={post.title}
@@ -123,8 +128,7 @@ export default async function SinglePostPage({ params }: PageProps) {
           <Mdx code={post.body.code} />
         </div>
 
-        <BackToPosts />
-
+        <BackToPosts date={formatDate(post.date)} />
       </section>
 
       {/* Other posts */}
@@ -146,6 +150,7 @@ export default async function SinglePostPage({ params }: PageProps) {
                 image={post.image}
                 tag={post.tag}
                 slug={post.slugAsParams}
+                date={formatDate(post.date)}
               />
             ))}
           </div>

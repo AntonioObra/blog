@@ -18,6 +18,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "contentlayer": "^0.3.4",
+    "date-fns": "^2.30.0",
     "framer-motion": "^10.16.12",
     "glslify-loader": "^2.0.0",
     "lucide-react": "^0.294.0",

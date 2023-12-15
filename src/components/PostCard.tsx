@@ -11,6 +11,7 @@ type PostCardProps = {
   tag: string;
   slug: string;
   isPriority?: boolean;
+  date: string;
 };
 
 const PostCard = ({
@@ -19,6 +20,7 @@ const PostCard = ({
   tag,
   slug,
   isPriority,
+  date
 }: PostCardProps) => {
   return (
     <MotionDiv
@@ -44,7 +46,8 @@ const PostCard = ({
         <div className="flex items-center justify-between mt-6">
           <hgroup className="group-hover:pl-6 transition-all duration-300">
             <p className="uppercase text-sm text-primary">{tag}</p>
-            <h1 className="text-lg">{title}</h1>
+            <h1 className="text-xl">{title}</h1>
+            <p className="text-sm text-muted-foreground mt-1">{date}</p>
           </hgroup>
 
           <div className="opacity-0 -translate-x-12  group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">

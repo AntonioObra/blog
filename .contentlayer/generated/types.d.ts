@@ -19,6 +19,7 @@ export type Blog = {
   url?: string | undefined
   tag: string
   image: string
+  date: IsoDateTimeString
   /** MDX file body */
   body: MDX
   slug: string

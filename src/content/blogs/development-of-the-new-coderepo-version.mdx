@@ -1,0 +1,41 @@
+---
+title: Development of the new Code Repo version
+description: Explore the current state of the development for the upcoming Code Repo version and discover the exciting new features that will be available.
+image: coderepo2.png
+tag: Code Repo
+date: 2024-01-07
+---
+
+The development of the new Code Repo version began about three weeks ago. Despite the holiday season with Christmas and New Year approaching, a significant amount of progress has been made, and the new version is already in good shape.
+
+### New tech stack
+
+In the spirit of exploration, I decided to venture into new technologies. For the frontend, I initially opted for Astro, a static site generator that I've been eager to try for a while. Unfortunately, my experience with Astro wasn't as smooth as expected. After struggling with user authentication implementation, I decided to switch back to Next.js. The intricacies of Astro, particularly with its use of nanostores and islands, was a bit too much for me and decided to go back to my comfort zone. Nevertheless, I plan to revisit Astro in the future, hoping for a better understanding.
+
+After a year of primarily working as a frontend developer, I aimed to return to backend development and finally embraced learning Go. Utilizing Fiber as the web framework with GORM, I found it to be a delightful stack, especially due to Fiber's resemblance to Express.js, a framework I've used in the past. Additionally, I integrated Supabase as the database. You might wonder why not use Supabase without Go and Fiber? Well, I wanted to learn Go and leverage Supabase, so I decided to combine the two.
+
+### Current progress
+
+The upcoming Code Repo version will feature sign-in and sign-up functionality. Users can save their preferred templates and resources for future use and explore a handy playground feature for code testing and output visualization.
+
+<Image
+  src="/images/posts/coderepo2-signinpage.png"
+  width="718"
+  height="404"
+  alt="Image"
+/>
+> Sign in page of the new Code Repo version.
+
+Most of the development time was invested in creating backend functionality for sign-in and sign-up, including models, routes, and controllers. Working with Go and Fiber posed its challenges, but with the combined efforts ChatGPT and me, we navigated through them successfully.
+
+The frontend is still in its early stages, focusing primarily on login and signup pages and establishing user authentication. To achieve this, I utilized NextAuth.js, employing credentials provider and integrating it with my Go backend.
+
+- [x] User authentication
+- [x] Supabase integration with Go
+- [x] Configuration of models, routes, and controllers for the backend
+- [x] Addition of guide models and routes
+- [x] Addition of resource models and routes
+
+## What's Next?
+
+The next steps involve empowering administrators to create resources and guides. Subsequently, we'll fetch all resources and guides and display them on the frontend. Following that, users will gain the ability to save their preferred resources and guides for future reference.

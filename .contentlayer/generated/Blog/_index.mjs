@@ -2,6 +2,7 @@
 
 import blogs__coderepoStatusV_0_1Mdx from './blogs__coderepo-status-v-0-1.mdx.json' assert { type: 'json' }
 import blogs__developmentOfTheNewCoderepoVersionMdx from './blogs__development-of-the-new-coderepo-version.mdx.json' assert { type: 'json' }
+import blogs__myVscodeConfigurationFor_2024Mdx from './blogs__my-vscode-configuration-for-2024.mdx.json' assert { type: 'json' }
 import blogs__newBlogPageMdx from './blogs__new-blog-page.mdx.json' assert { type: 'json' }
 
-export const allBlogs = [blogs__coderepoStatusV_0_1Mdx, blogs__developmentOfTheNewCoderepoVersionMdx, blogs__newBlogPageMdx]
+export const allBlogs = [blogs__coderepoStatusV_0_1Mdx, blogs__developmentOfTheNewCoderepoVersionMdx, blogs__myVscodeConfigurationFor_2024Mdx, blogs__newBlogPageMdx]

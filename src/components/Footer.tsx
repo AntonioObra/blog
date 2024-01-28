@@ -10,7 +10,7 @@ const Footer = () => {
           Created by<br></br>Antonio Obradović
         </h1>
 
-        <div className="mt-8 flex items-center justify-center gap-4">
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
           <Link
             href="https://github.com/AntonioObra"
             target="_blank"
@@ -35,6 +35,32 @@ const Footer = () => {
             title="LinkedIn"
           >
             <Icons.linkedin className="h-5 w-5" />
+          </Link>
+
+          <Link
+            href="https://medium.com/@antonio_84382"
+            target="_blank"
+            rel="noreferrer"
+            className={buttonVariants({
+              variant: "secondary",
+              size: "lg",
+            })}
+            title="Medium"
+          >
+            <Icons.medium className="h-5 w-5" />
+          </Link>
+
+          <Link
+            href="https://dev.to/antonioobra"
+            target="_blank"
+            rel="noreferrer"
+            className={buttonVariants({
+              variant: "secondary",
+              size: "lg",
+            })}
+            title="Dev.to"
+          >
+            <Icons.devTo className="h-5 w-5" />
           </Link>
         </div>
       </div>

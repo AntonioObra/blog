@@ -22,7 +22,7 @@
     "framer-motion": "^10.16.12",
     "glslify-loader": "^2.0.0",
     "lucide-react": "^0.294.0",
-    "next": "14.0.3",
+    "next": "14.1.1",
     "next-contentlayer": "^0.3.4",
     "next-themes": "^0.2.1",
     "raw-loader": "^4.0.2",

@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@theme {
+    --font-sans: "Inter Variable", "sans-serif";
+}
+
+@layer base {
+    body {
+        color: var(--color-stone-400);
+    }
+
+    h1 {
+        font-size: var(--text-8xl);
+        color: var(--color-white);
+        font-weight: var(--font-weight-bold);
+    }
+
+    h2 {
+        font-size: var(--text-5xl);
+        color: var(--color-white);
+        font-weight: var(--font-weight-bold);
+    }
+
+    p {
+        font-style: italic;
+    }
+
+    ::selection {
+        color: var(--color-white);
+        background-color: var(--color-blue-500);
+    }
+}

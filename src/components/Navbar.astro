@@ -1,16 +1,21 @@
-<navbar class="sticky h-fit lg:py-60 top-0 col-span-2">
-    <ul class="flex flex-col gap-6 text-right">
-        <li class="text-white flex gap-2 items-center font-semibold">
-            <a href="#about">About</a>
-            <div class="bg-blue-500 h-[2px] w-full"></div>
-        </li>
-        <li class="text-zinc-400 flex gap-2 items-center font-semibold">
-            <a href="#posts">Posts</a>
-            <div class="bg-zinc-400 h-[2px] w-full"></div>
-        </li>
-        <li class="text-zinc-400 flex gap-2 items-center font-semibold">
-            <a href="#contact">Contact</a>
-            <div class="bg-zinc-400 h-[2px] w-full"></div>
-        </li>
+---
+const links = [
+ {
+   link: "/#index",
+   name: "Index",
+ },
+ {
+   link: "/#posts",
+   name: "Posts",
+ },
+
+];
+---
+
+<navbar class="sticky top-[30px] col-span-2 flex justify-center motion-opacity-in-0 motion-translate-y-in-100 motion-duration-[1s] motion-delay-200 z-50">
+    <ul class="flex items-center justify-center gap-6 bg-blue-500/90 backdrop-blur-xl ring-4 ring-blue-500/50 w-fit py-2 px-6 rounded-2xl">
+        {
+            links.map((link) => <li ><a class="text-sm font-semibold text-white" href=`${link.link}`>{link.name}</a></li>)
+        }
     </ul>
 </navbar>

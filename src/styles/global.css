@@ -1,37 +1,52 @@
 @import "tailwindcss";
 
-@layer theme, base, components, utilities;
-@import "tailwindcss/theme.css" layer(theme);
-@import "tailwindcss/preflight.css" layer(base);
-@import "tailwindcss/utilities.css" layer(utilities);
+@plugin '@tailwindcss/typography';
+
+@plugin "tailwindcss-motion";
+@plugin 'tailwindcss-intersect';
 
 @theme {
-    --font-sans: "Inter Variable", "sans-serif";
+    --font-main: "Instrument Serif", "sans-serif";
+    --font-normal: "Inter Variable", "sans-serif";
+    --color-primary: var(--color-blue-500);
 }
 
-@layer base {
-    body {
-        color: var(--color-stone-400);
+
+@utility container {
+  padding-inline: 20px;
+  margin-inline: auto;
+}
+
+::selection {
+    @apply text-zinc-100;
+    background-color: var(--color-primary);
+}
+
+@utility prose {
+    --tw-prose-body: var(--color-slate-200);
+    --tw-prose-headings: var(--color-white);
+    --tw-prose-bold: var(--color-white);
+    --tw-prose-quote-borders: var(--color-slate-300);
+    --tw-prose-quotes: var(--color-slate-300);
+    --tw-prose-code: var(--color-slate-200);
+
+    code {
+        &::before,
+        &::after {
+            display: none;
+        }
+        text-wrap: nowrap;
     }
 
-    h1 {
-        font-size: var(--text-8xl);
+    a {
         color: var(--color-white);
-        font-weight: var(--font-weight-bold);
     }
 
-    h2 {
-        font-size: var(--text-5xl);
-        color: var(--color-white);
-        font-weight: var(--font-weight-bold);
+    img {
+        @apply rounded-lg ring-2 ring-primary;
     }
 
-    p {
-        font-style: italic;
-    }
-
-    ::selection {
-        color: var(--color-white);
-        background-color: var(--color-blue-500);
+    blockquote {
+        font-weight: 400;
     }
 }

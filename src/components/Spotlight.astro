@@ -1,0 +1,15 @@
+<div
+    id="spotlight"
+    class="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute"
+    style="background: radial-gradient(600px at 0px 0px, rgba(43, 127, 255, 0.15), transparent 80%);"
+>
+</div>
+
+<script type="module">
+    document.addEventListener("mousemove", (e) => {
+        const spotlight = document.getElementById("spotlight");
+        const x = e.pageX;
+        const y = e.pageY;
+        spotlight.style.background = `radial-gradient(600px at ${x}px ${y}px, rgba(43, 127, 255, 0.15), transparent 80%)`;
+    });
+</script>

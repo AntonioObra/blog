@@ -1,0 +1,67 @@
+---
+import '@fontsource/instrument-serif';
+import '@fontsource-variable/inter';
+
+import "../styles/global.css";
+
+import type { CollectionEntry } from "astro:content";
+import BaseHead from "../components/BaseHead.astro";
+import FormattedDate from "../components/FormattedDate.astro";
+import Spotlight from "../components/Spotlight.astro";
+import Navbar from "../components/Navbar.astro";
+
+type Props = CollectionEntry<"blog">["data"];
+
+const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <BaseHead title={title} description={description} />
+    </head>
+
+    <body class="scheme-dark bg-[#101010] text-white relative">
+        <Spotlight />
+
+        <main>
+            <Navbar />
+
+            <article class="container mx-auto max-w-2xl mt-70 pb-40">
+                <div class="">
+                    <h1 class="text-7xl font-main motion-opacity-in-0 motion-translate-y-in-100 motion-duration-[1s] motion-delay-300">{title}</h1>
+
+                    <div class="mt-2 text-slate-300 motion-opacity-in-0 motion-translate-y-in-100 motion-duration-[1s] motion-delay-500">
+                        <FormattedDate date={pubDate} />
+                        {
+                            updatedDate && (
+                                <div class="last-updated-on">
+                                    Last updated on{" "}
+                                    <FormattedDate date={updatedDate} />
+                                </div>
+                            )
+                        }
+                    </div>
+                </div>
+
+                <div class="my-7 motion-opacity-in-0 motion-translate-y-in-100 motion-duration-[1s] motion-delay-800">
+                    {
+                        heroImage && (
+                            <img
+                                width={1020}
+                                height={510}
+                                src={heroImage}
+                                alt=""
+                                class="rounded-xl ring-2 ring-primary"
+                            />
+                        )
+                    }
+                </div>
+
+                <div class="prose motion-translate-y-in-100 motion-duration-[1s] motion-delay-1000">
+                    <slot />
+                </div>
+            </article>
+        </main>
+    </body>
+</html>

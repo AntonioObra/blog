@@ -1,0 +1,35 @@
+---
+import "@fontsource/instrument-serif";
+import "@fontsource-variable/inter";
+
+import "../styles/global.css";
+
+import Spotlight from "../components/Spotlight.astro";
+import Navbar from "../components/Navbar.astro";
+import BaseHead from "../components/BaseHead.astro";
+
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <BaseHead title="obradovic.blog" description="Antonio Obradovic blog"/>
+
+        <title>obradovic.blog</title>
+    </head>
+
+    <body class="scheme-dark bg-[#101010] text-white relative">
+        <Spotlight />
+
+        <main>
+            <Navbar />
+
+            <slot />
+        </main>
+
+        <script>
+              import { Observer } from 'tailwindcss-intersect';
+              Observer.start();
+            </script>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@plugin '@tailwindcss/typography';
+
+@plugin "tailwindcss-motion";
+@plugin 'tailwindcss-intersect';
+
+@theme {
+    --font-main: "Instrument Serif", "sans-serif";
+    --font-normal: "Inter Variable", "sans-serif";
+    --color-primary: var(--color-blue-500);
+}
+
+
+@utility container {
+  padding-inline: 20px;
+  margin-inline: auto;
+}
+
+::selection {
+    @apply text-zinc-100;
+    background-color: var(--color-primary);
+}
+
+@utility prose {
+    --tw-prose-body: var(--color-slate-200);
+    --tw-prose-headings: var(--color-white);
+    --tw-prose-bold: var(--color-white);
+    --tw-prose-quote-borders: var(--color-slate-300);
+    --tw-prose-quotes: var(--color-slate-300);
+    --tw-prose-code: var(--color-slate-200);
+
+    code {
+        &::before,
+        &::after {
+            display: none;
+        }
+        text-wrap: nowrap;
+    }
+
+    a {
+        color: var(--color-white);
+    }
+
+    img {
+        @apply rounded-lg ring-2 ring-primary;
+    }
+
+    blockquote {
+        font-weight: 400;
+    }
+}

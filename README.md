@@ -1,1 +1,1 @@
-Personal blog using NextJS and MDX.
+# 2025 Blog
